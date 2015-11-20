@@ -341,11 +341,11 @@ Write an [HTML page](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/h
 
 Requirements:
   
-  -valid HTML5  
-  -internal link  
-  -external link (opens in new window/tab)  
-  -image   
-  -link email address   opens standard mail-client and populated :to field (subject: "Your site is awesome") 
+  - valid HTML5  
+  - internal link  
+  - external link (opens in new window/tab)  
+  - image   
+  - link email address   opens standard mail-client and populated :to field (subject: "Your site is awesome") 
   
 ## Exercise/Lab #1 option 2
 For those that still have their About Me page (or the above post-WDI future page)- convert it to an HTML 5 template
