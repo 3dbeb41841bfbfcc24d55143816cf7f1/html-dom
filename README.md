@@ -337,7 +337,7 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 ----
 
 ## Exercise/Lab #1 option 1
-Write an HTML page from scratch -> post-WDI future
+Write an [HTML page](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) from scratch -> post-WDI future
 
 Requirements:
   
