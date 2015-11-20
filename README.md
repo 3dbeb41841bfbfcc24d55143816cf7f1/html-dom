@@ -8,7 +8,6 @@
 ####Relation to Big Goal
 - As full-stack developers we need to be familiar with HTML and the DOM.
 
-
 ####Agenda
 - Hook
 - HTML and DOM Overview
@@ -16,10 +15,7 @@
 - LAB #1 - give them energy exercise (pair up) or have them build their post-WDI future page
 - Walk thru HTML5 & boilerplate
 - LAB #2 - have them try to convert their post-WDI future page to HTML 5 boilerplate
-
 - If there's time touch on Accessibility (at the bottom)
-
-
 
 
 ###Hook
@@ -380,7 +376,7 @@ Compose the Document Outline for…
 - Explain image "alt" texts, and what they're used for.
 - Explain cross-browser compatibility, and name a few major concerns.
 - Explain what SEO is, and why it's important.
-- Explain what the document <title> tag is, and why it's important.
+- Explain what the document `<title>` tag is, and why it's important.
 
 ### Mechanics
 - Create an HTML document outline based on content heirarchy.
@@ -427,6 +423,3 @@ HTML:
 * Tim Berners-Lee: <http://www.w3.org/People/Berners-Lee/>
 * Evolution of the Web: <http://www.evolutionoftheweb.com/> (you'll love it)
 * Semantic HTML: <http://en.wikipedia.org/wiki/Semantic_HTML>
-
-
-
