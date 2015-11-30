@@ -383,17 +383,19 @@ HTML:
 * Semantic HTML: <http://en.wikipedia.org/wiki/Semantic_HTML>
 
 ----
+## Extra Practice
+Clone your [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo to grab starteer code for the following exercises.
 
 ## Exercise #1
 
-Compose the Document Outline for…
+With HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website…
 [How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
 
-[LAB](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
+[Starter Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
 
-[Finished](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline_fin.html)
+[Finished Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline_fin.html)
 
 ## Exercise #2
 
-[Busy Hands](https://github.com/ga-students/WDI_ATL_2_Instructors/tree/master/Lessons/html_dom/busy_hands_html_dom_lab)
+Clone your HTML/DOM repo and work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/html-dom) exercise.
 
