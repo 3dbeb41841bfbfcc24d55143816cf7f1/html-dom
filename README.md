@@ -8,16 +8,6 @@
 ####Relation to Big Goal
 - As full-stack developers we need to be familiar with HTML and the DOM.
 
-####Agenda
-- Hook
-- HTML and DOM Overview
-- Send them code for walk thru/code along of tags
-- LAB #1 - give them energy exercise (pair up) or have them build their post-WDI future page
-- Walk thru HTML5 & boilerplate
-- LAB #2 - have them try to convert their post-WDI future page to HTML 5 boilerplate
-- If there's time touch on Accessibility (at the bottom)
-
-
 ###Hook
 Using Inspector, alter a webpage to add a funny headline using Gerry as an example.
 
@@ -73,7 +63,7 @@ What does HTML stand for?
 
 
 ###Let's walk through some HTML Tags
-(Consider using the `html_practice_lab.md` to have each student build a page in 20-ish min using git commits and GitHub. Then, choose a student to demo what they built as you guide them through the review notes below.)
+(Consider using the `html_practice_lab.md` to have each student build a page in 15-ish min using git commits and GitHub. Then, choose a student to demo what they built as you guide them through the review notes below.)
 
 WE DO:
 
@@ -125,8 +115,6 @@ WE DO:
     </body>
   <html>
 ```
-
-When we open our file in Chrome... "Hello, world!" Congratulations, you've just built your first webpage!
 
 ## HTML Tags
 
