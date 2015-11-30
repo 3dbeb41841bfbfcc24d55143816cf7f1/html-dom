@@ -384,7 +384,7 @@ HTML:
 
 ----
 ## Extra Practice
-Clone your [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo to grab starteer code for the following exercises.
+Clone your [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo to grab starter code for the following exercises.
 
 ## Exercise #1
 
