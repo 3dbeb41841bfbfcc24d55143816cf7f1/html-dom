@@ -388,7 +388,7 @@ Clone your [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo to gra
 
 ## Exercise #1
 
-With HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website…
+Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website…
 [How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
 
 [Starter Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
