@@ -63,7 +63,7 @@ What does HTML stand for?
 
 
 ###Let's walk through some HTML Tags
-(Consider using the `html_practice_lab.md` to have each student build a page in 15-ish min using git commits and GitHub. Then, choose a student to demo what they built as you guide them through the review notes below.)
+(Consider using the `html_practice_lab.md` [here](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) to have each student build a page in 15-ish min using git commits and GitHub. Then, choose a student to demo what they built as you guide them through the review notes below.)
 
 WE DO:
 
@@ -324,22 +324,7 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 
 ----
 
-## Exercise/Lab #1 option 1
-Write an [HTML page](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) from scratch -> post-WDI future
-
-Requirements:
-  
-  - valid HTML5  
-  - internal link  
-  - external link (opens in new window/tab)  
-  - image   
-  - link email address   opens standard mail-client and populated :to field (subject: "Your site is awesome") 
-  
-## Exercise/Lab #1 option 2
-For those that still have their About Me page (or the above post-WDI future page)- convert it to an HTML 5 template
-	
-
-## Exercise/Lab #2
+## Exercise/Lab #1
 
 Compose the Document Outline for…
 [How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
@@ -348,7 +333,7 @@ Compose the Document Outline for…
 
 [Finished](file:///Users/marcwright/WDI_ATL_1_Instructors/REPO%20-%20DC%20-%20Instructors/w04/d02/document_accessibility/accessibility_fin.html)
 
-## Exercise/Lab #3
+## Exercise/Lab #2
 
 [Busy Hands](https://github.com/ga-students/WDI_ATL_2_Instructors/tree/master/Lessons/html_dom/busy_hands_html_dom_lab)
 
