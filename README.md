@@ -323,21 +323,6 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 
 
 ----
-
-## Exercise/Lab #1
-
-Compose the Document Outline for…
-[How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
-
-[LAB](https://github.com/marcwright/WDI_ATL_1_Instructors/tree/master/REPO%20-%20DC%20-%20Instructors/w04/d01/document_outline)
-
-[Finished](file:///Users/marcwright/WDI_ATL_1_Instructors/REPO%20-%20DC%20-%20Instructors/w04/d02/document_accessibility/accessibility_fin.html)
-
-## Exercise/Lab #2
-
-[Busy Hands](https://github.com/ga-students/WDI_ATL_2_Instructors/tree/master/Lessons/html_dom/busy_hands_html_dom_lab)
-
-----
 ## Web Accessibility / SEO
 
 ### Concepts
@@ -396,3 +381,19 @@ HTML:
 * Tim Berners-Lee: <http://www.w3.org/People/Berners-Lee/>
 * Evolution of the Web: <http://www.evolutionoftheweb.com/> (you'll love it)
 * Semantic HTML: <http://en.wikipedia.org/wiki/Semantic_HTML>
+
+----
+
+## Exercise/Lab #1
+
+Compose the Document Outline for…
+[How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
+
+[LAB](https://github.com/marcwright/WDI_ATL_1_Instructors/tree/master/REPO%20-%20DC%20-%20Instructors/w04/d01/document_outline)
+
+[Finished](file:///Users/marcwright/WDI_ATL_1_Instructors/REPO%20-%20DC%20-%20Instructors/w04/d02/document_accessibility/accessibility_fin.html)
+
+## Exercise/Lab #2
+
+[Busy Hands](https://github.com/ga-students/WDI_ATL_2_Instructors/tree/master/Lessons/html_dom/busy_hands_html_dom_lab)
+
