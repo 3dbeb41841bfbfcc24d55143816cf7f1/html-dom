@@ -20,7 +20,7 @@ Goto Atlanta Craigslist and walk though setp by step: `document.getElementsByCla
 WE DO: 
 
 - Instructor holds up a newspaper. Asks students to identify the various parts/sections.
-- HTML would be the individual elements, DOM is the entire page
+- HTML would be the individual elements (recipe), DOM is what's rendered in the browser (fully baked recipe)
 - The idea is to start seeing the structure of a page instead of the content only.
 
 What is the Window Object?
