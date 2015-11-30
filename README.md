@@ -384,16 +384,16 @@ HTML:
 
 ----
 
-## Exercise/Lab #1
+## Exercise #1
 
 Compose the Document Outline for…
 [How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
 
-[LAB](https://github.com/marcwright/WDI_ATL_1_Instructors/tree/master/REPO%20-%20DC%20-%20Instructors/w04/d01/document_outline)
+[LAB](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
 
-[Finished](file:///Users/marcwright/WDI_ATL_1_Instructors/REPO%20-%20DC%20-%20Instructors/w04/d02/document_accessibility/accessibility_fin.html)
+[Finished](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline_fin.html)
 
-## Exercise/Lab #2
+## Exercise #2
 
 [Busy Hands](https://github.com/ga-students/WDI_ATL_2_Instructors/tree/master/Lessons/html_dom/busy_hands_html_dom_lab)
 
