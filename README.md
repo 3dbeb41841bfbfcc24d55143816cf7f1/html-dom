@@ -74,7 +74,7 @@ WE DO:
 `$ touch demo_1.html`  
 `$ subl demo_1.html`  
 
-```
+```html
   <!DOCTYPE html>
   <html>
   	<head>
@@ -133,7 +133,7 @@ Pair up and have them look up the following tags below:
 
 When opening a new html file, it is important to include a "head".
 
-```
+```html
   <head>
       <title>Page's title</title>
       <meta name="description" content="...">
@@ -178,7 +178,7 @@ It is important to mention that `<meta>` "content" and "keywords" are outdated H
 
 In our code example above:
 
-```  
+```html
 <a href="www.w3.org" target="_blank">
   <img src="http://www.misiide.net/images/2013/03/Tim-Berners-Lee.jpg" alt="A picture of Tim Berners-Lee!" />
 </a>
@@ -199,7 +199,7 @@ We use the `<table>` tags to display tabular data.
 
 Example:
 
-```
+```html
   <table border="1">
     <thead>
         <tr>
@@ -355,7 +355,7 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 
 Roles may be assigned to any tag. They're typically added to block-level elements to denote the role of the block's internal content.
 
-```
+```html
  <div role="banner">Welcome to my website!</div>
 ```
 
