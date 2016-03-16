@@ -10,6 +10,8 @@
 
 ## Differentation between HTML and DOM
 
+*Walk through the HTML slides from the PDF then revisit the HTML + Dom sections here.*
+
 ### Hook (5 min)
 We're gonna get into DOM manipulation later in the week, but let's go to ESPN.com and play around with some headlines.
 
