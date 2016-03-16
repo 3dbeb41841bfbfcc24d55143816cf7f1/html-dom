@@ -1,27 +1,57 @@
 
 # Intro to HTML & the DOM
 
-####Objectives:
+### Objectives
 - Student will demonstrate the ability to use HTML to create a document.
 - Student will understand the difference between HTML and the DOM
 
-####Relation to Big Goal
-- As full-stack developers we need to be familiar with HTML and the DOM.
+### Preparation
+- Pre-work and About Me page completion
 
-###Hook
-Using Inspector, alter a webpage to add a funny headline using Gerry as an example.
+## Differentation between HTML and DOM
 
-OR
+### Hook (5 min)
+We're gonna get into DOM manipulation later in the week, but let's go to ESPN.com and play around with some headlines.
+
+Using Inspector, alter something on the page.
+
+or 
 
 Goto Atlanta Craigslist and walk though setp by step: `document.getElementsByClassName('ban')[0].innerHTML = "MARC!"`
 
+Questions:
 
-###HTML and DOM Definition and Overview
-WE DO: 
+- What happens if I refresh the page?
+- What am we actually changing- the HTML or the DOM?
+
+
+### What is HTML?
+HTML stands for "Hyper Text Markup Language". It is not a programming language, as it doesn't send any instruction to your computer. However, it does send instructions to the browser (Chrome, Firefox, Safari, etc.), telling it what to display on the screen. 
+
+HTML is the skeleton of a website. It is nothing more than *structured content*. HTML is inherently logicless, therefore, it is NOT CODE (it's content).
+
+**WE DO:**
 
 - Instructor holds up a newspaper. Asks students to identify the various parts/sections.
 - HTML would be the individual elements (recipe), DOM is what's rendered in the browser (fully baked recipe)
 - The idea is to start seeing the structure of a page instead of the content only.
+- Checkout [Wirify](https://www.wirify.com/)
+
+
+### What is the DOM?
+
+- A browser receives a page as HTML and creates a model and stores it in memory creating a Document Object Model (a.k.a. the DOM tree).
+
+![DOM Tree](http://www.webstepbook.com/supplements/slides/images/dom_tree.gif)
+
+- The DOM has properties, methods and events that each browser implements in the same way.
+- Each DOM "element" is an object, and may be accessed and modified independently of other content.
+- Inspectible using the web inspector.
+- Defines a heirarchy for all content elements in the document.
+- In the console, type `document.` and check out the available methods.
+- Demo `document.lastModified` and `document.title`. 
+- Demo get element by class or id or tagname.
+- As with our earlier ESPN example, you can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('MARC')`
 
 What is the Window Object?
 
@@ -30,39 +60,7 @@ What is the Window Object?
 - In the console, type `window.` an check out the available methods.
 - Demo `window.location`. Also, point out local storage.
 
-
-What is the DOM?
-
-**DOM Tree:**
-
-![DOM Tree](http://www.webstepbook.com/supplements/slides/images/dom_tree.gif)
-
-- Document Object Model or the DOM tree
-- The current broswer page is the DOM and everything is an object.
-- Defines structure for all content within the document.
-- The DOM has properties, methods and events that each browser implements in the same way.
-- When we get to js there's document.load
-- Each "element" is an object, and may be accessed and modified independently of other content.
-- Inspectible using the web inspector.
-- Defines a heirarchy for all content elements in the document.
-- In the console, type `document.` and check out the available methods.
-- Demo `document.lastModified` and `document.title`. Point out that you can't do this for the Window Object.
-- Demo get element by class or id.
-
-YOU DO:
-- Have the class play with calling elements.
-
-What does HTML stand for?
-
-- HTML stands for "Hyper Text Markup Language". It is not a programming language, as it doesn't send any instruction to your computer. However, it does send instructions to the browser (Chrome, Firefox, Safari, etc.), telling it what to display on the screen. 
-- A browser receives a page as HTML and creates a model and stores it in memory creating a DOM tree.
-- DEMO: You can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('MARC')`
-- The skeleton of a website. It is nothing more than *structured content*. HTML is inherently logicless, therefore, it is NOT CODE (it's content).
-
-
-
-
-###Let's walk through some HTML Tags
+## HTML Tags
 (Consider using the `html_practice_lab.md` [here](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) to have each student build a page in 15-ish min using git commits and GitHub. Then, choose a student to demo what they built as you guide them through the review notes below.)
 
 WE DO:
@@ -116,7 +114,7 @@ WE DO:
   <html>
 ```
 
-## HTML Tags
+## HTML Tags Con't
 
 YOU DO:
 
@@ -128,17 +126,17 @@ Pair up and have them look up the following tags below:
 `<html>...</html>` -> contains your html content - it will tell the browser that everything within these tags should be interpreted as HTML.
 
 
-#### Introduction to `head` tags
+### Introduction to `head` tags
 
 
 When opening a new html file, it is important to include a "head".
 
 ```html
-  <head>
-      <title>Page's title</title>
-      <meta name="description" content="...">
-      <meta name="keywords">
-  </head>
+<head>
+  <title>Page's title</title>
+  <meta name="description" content="...">
+  <meta name="keywords">
+</head>
 ```
 
 The "head" is important for search engines, as it helps provide additional information about the website. Anything within the <head> tags will NOT be displayed on the page. 
@@ -199,7 +197,7 @@ We use the `<table>` tags to display tabular data.
 
 Example:
 
-```html
+```
   <table border="1">
     <thead>
         <tr>
@@ -355,7 +353,7 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 
 Roles may be assigned to any tag. They're typically added to block-level elements to denote the role of the block's internal content.
 
-```html
+```
  <div role="banner">Welcome to my website!</div>
 ```
 
