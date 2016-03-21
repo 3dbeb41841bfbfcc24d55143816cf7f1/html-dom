@@ -62,63 +62,13 @@ What is the Window Object?
 - In the console, type `window.` an check out the available methods.
 - Demo `window.location`. Also, point out local storage.
 
-## HTML Tags
+## Introduction to HTML tags
+**YOU DO:**
+
 (Consider using the `html_practice_lab.md` [here](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) to have each student build a page in 15-ish min using git commits and GitHub. Then, choose a student to demo what they built as you guide them through the review notes below.)
 
-WE DO:
 
-- In your "classwork" folder:   
-
-`$ mkdir html`  
-`$ cd html `  
-`$ touch demo_1.html`  
-`$ subl demo_1.html`  
-
-```html
-  <!DOCTYPE html>
-  <html>
-  	<head>
-      <title>Page's title</title>
-      <meta name="description" content="...">
-      <meta name="keywords">
-  	</head>
-  	<body>
-      <h1>My first webpage!</h1>
-      <p>Hello, world!</p>
-
-      <p>
-        This word is <b>bold</b>.
-      </p>
-
-      <p>This word is <i>italic</i>.</p>
-      
-      <strong>This is strong</strong>
-
-      <h2>Lists</h2>
-
-      <h3>Ordered list</h3>
-        <ol>
-          <li>Call mom</li>
-          <li>Buy milk</li>
-        </ol>
-
-      <h3>Unordered list</h3>
-        <ul>
-          <li>Apple</li>
-          <li>Orange</li>
-        </ul>
-      
-      <img src="http://www.misiide.net/images/2013/03/Tim-Berners-Lee.jpg" alt="A picture of Tim Berners-Lee!" />   
-
-      <a href="http://www.google.com" target="_blank">Google</a>
-
-    </body>
-  <html>
-```
-
-## HTML Tags Con't
-
-YOU DO:
+**YOU DO:**
 
 Pair up and have them look up the following tags below:
 
@@ -126,10 +76,6 @@ Pair up and have them look up the following tags below:
 `<!DOCTYPE html>` -> informs the browser that this file is an HTML file
 
 `<html>...</html>` -> contains your html content - it will tell the browser that everything within these tags should be interpreted as HTML.
-
-
-### Introduction to `head` tags
-
 
 When opening a new html file, it is important to include a "head".
 
@@ -383,9 +329,6 @@ HTML:
 * Semantic HTML: <http://en.wikipedia.org/wiki/Semantic_HTML>
 
 ----
-## Extra Practice
-Clone your [HTML/DOM](https://github.com/ATL-WDI-Exercises/html-dom) repo to grab starter code for the following exercises.
-
 ## Exercise #1
 
 Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website…
@@ -397,5 +340,5 @@ Using HTML tags only (don't worry about CSS), use the starter code below to recr
 
 ## Exercise #2
 
-Clone your HTML/DOM repo and work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/html-dom) exercise.
+Clone your HTML/DOM repo and work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise.
 
