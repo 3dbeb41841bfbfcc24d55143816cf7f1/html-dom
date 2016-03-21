@@ -199,7 +199,7 @@ We use the `<table>` tags to display tabular data.
 
 Example:
 
-```
+```html
   <table border="1">
     <thead>
         <tr>
