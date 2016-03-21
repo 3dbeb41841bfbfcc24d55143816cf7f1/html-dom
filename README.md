@@ -355,7 +355,7 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 
 Roles may be assigned to any tag. They're typically added to block-level elements to denote the role of the block's internal content.
 
-```
+```html
  <div role="banner">Welcome to my website!</div>
 ```
 
