@@ -1,36 +1,48 @@
-
 # Intro to HTML & the DOM
 
-### Objectives
-- Student will demonstrate the ability to use HTML to create a document.
-- Student will understand the difference between HTML and the DOM
+### Learning Objectives
+* Build a simple web page using HTML
+* Explain the various parts of an HTML document, including:
+  - the `<head>` and `<body>` tags
+  - container elements such as `<div>`, `<header>`, `<footer>`, `<section>`, and `<article>`
+  - common elements such as `<h1>`, `<h2>`, `<p>`, `<ul>`, and `<li>`
+* Explain the difference between _HTML_ and the _DOM_
 
 ### Preparation
 - Pre-work and About Me page completion
 
 ## Differentation between HTML and DOM
 
-*Walk through the HTML slides from the PDF then revisit the HTML + Dom sections here.*
+_HTML_: the language we use to create an HTML Web Page / Document
+_DOM_: the _D_ocument _O_bject _M_odel, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
+
+Note that the _DOM_ can be _manipulated_ via _JavaScript_ code.
 
 ### Hook (5 min)
-We're gonna get into DOM manipulation later in the week, but let's go to ESPN.com and play around with some headlines.
+We're gonna get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [ESPN](http://espn.go.com/) web site and play around with some headlines.
 
-Using Inspector, alter something on the page.
+Using the Chrome DevTools Inspector, alter something on the page.
 
-or 
+Then go to [Atlanta Craigslist](https://atlanta.craigslist.org/) and try running the following `javascript` DOM manipulation code in the JavaScript console:
 
-Goto Atlanta Craigslist and walk though setp by step: `document.getElementsByClassName('ban')[0].innerHTML = "MARC!"`
+```javascript
+document.getElementById('logo').children[0].text = 'MikesList';
+document.getElementsByClassName('ban')[0].children[0].text = 'WDI Rocks!'
+```
 
 Questions:
 
+- Did I just hack Craigslist?
 - What happens if I refresh the page?
 - What am we actually changing- the HTML or the DOM?
 
 
 ### What is HTML?
-HTML stands for "Hyper Text Markup Language". It is not a programming language, as it doesn't send any instruction to your computer. However, it does send instructions to the browser (Chrome, Firefox, Safari, etc.), telling it what to display on the screen. 
+HTML stands for "Hyper Text Markup Language". It is not a general purpose programming language like JavaScript or Ruby but rather a _markup_ language, i.e. a language for representing structured text.
 
-HTML is the skeleton of a website. It is nothing more than *structured content*. HTML is inherently logicless, therefore, it is NOT CODE (it's content).
+HTML is the skeleton of a website. It is the *structured content* of the website.
+
+![Anatomy of an HTML Document](images/anatomy-of-an-html-doc.jpg)
 
 **WE DO:**
 
@@ -42,16 +54,16 @@ HTML is the skeleton of a website. It is nothing more than *structured content*.
 
 ### What is the DOM?
 
-- A browser receives a page as HTML and creates a model and stores it in memory creating a Document Object Model (a.k.a. the DOM tree).
+- A browser receives a page as HTML and creates a model and stores it in memory creating a _D_ocument _O_bject _M_odel (a.k.a. the DOM tree).
 
-![DOM Tree](http://www.webstepbook.com/supplements/slides/images/dom_tree.gif)
+![DOM Tree](images/dom_tree.gif)
 
 - The DOM has properties, methods and events that each browser implements in the same way.
 - Each DOM "element" is an object, and may be accessed and modified independently of other content.
 - Inspectible using the web inspector.
 - Defines a heirarchy for all content elements in the document.
 - In the console, type `document.` and check out the available methods.
-- Demo `document.lastModified` and `document.title`. 
+- Demo `document.lastModified` and `document.title`.
 - Demo get element by class or id or tagname.
 - As with our earlier ESPN example, you can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('MARC')`
 
@@ -87,7 +99,7 @@ When opening a new html file, it is important to include a "head".
 </head>
 ```
 
-The "head" is important for search engines, as it helps provide additional information about the website. Anything within the <head> tags will NOT be displayed on the page. 
+The "head" is important for search engines, as it helps provide additional information about the website. Anything within the <head> tags will NOT be displayed on the page.
 
 We had these tags right after the opening `<html>` tag, and before the opening `<body>` tag.
 
@@ -116,7 +128,7 @@ It is important to mention that `<meta>` "content" and "keywords" are outdated H
 
 `<br />`        -> self-closing tag, allowing you to break the content (CSS will allow us to achieve the same result, in a better way).
 
-`<img src="url" alt="description" /> `-> image tag. This is a self-closing tag, meaning you don't need a </img> tag. It should include the source of the file (can be a url or a file path) and a description (alt) for the search engines. 
+`<img src="url" alt="description" /> `-> image tag. This is a self-closing tag, meaning you don't need a </img> tag. It should include the source of the file (can be a url or a file path) and a description (alt) for the search engines.
 
 `<link>` -> self closing
 
@@ -128,13 +140,13 @@ In our code example above:
 <a href="www.w3.org" target="_blank">
   <img src="http://www.misiide.net/images/2013/03/Tim-Berners-Lee.jpg" alt="A picture of Tim Berners-Lee!" />
 </a>
-``` 
- 
+```
+
 Add the href above to make this makes the image "clickable", and redirects to the W3 website.
 
 `<span>...</span>`  -> inline element, allows us to isolate a bit of text and apply it a style with CSS (we'll see this later on today). SPAN elements take only the space they need on the page, as opposed to DIV elements.
 
-`<div>...</div>`    -> block element, these elements take up the whole width of the page, unless specific style is applied to them with CSS. They can contain paragraphs, headings, text, images, other divs, etc. They work as a way to structure the page with clearly delimited blocks. 
+`<div>...</div>`    -> block element, these elements take up the whole width of the page, unless specific style is applied to them with CSS. They can contain paragraphs, headings, text, images, other divs, etc. They work as a way to structure the page with clearly delimited blocks.
 
 
 
@@ -178,27 +190,27 @@ September 29 |73 kg | 2.1 km
 
 Table-specific tags:
 
-`<table>...</table>`  -> contains the table data, and defines the table structure  
-`<thead>...</thead>`  -> the head of the table (bolder text) - optional  
-`<tr>...</tr>`    -> defines a row  
-`<th>...</th>`    -> defines a cell within that row  
-`<tbody>...</tbody>`  -> the body of the table   
+`<table>...</table>`  -> contains the table data, and defines the table structure
+`<thead>...</thead>`  -> the head of the table (bolder text) - optional
+`<tr>...</tr>`    -> defines a row
+`<th>...</th>`    -> defines a cell within that row
+`<tbody>...</tbody>`  -> the body of the table
 
-REMEMBER: Don't use tables to define the layout of a page! 
+REMEMBER: Don't use tables to define the layout of a page!
 
 
 
 ## Google Chrome Developer Tools
 
-Let us have a quick first look at **Chrome Developer Tools**. Available as a console in Google Chrome, it allows us to get a lot of information about the page we're on, providing a detailed look into the HTML structure of the page and the CSS styling, among other things. 
+Let us have a quick first look at **Chrome Developer Tools**. Available as a console in Google Chrome, it allows us to get a lot of information about the page we're on, providing a detailed look into the HTML structure of the page and the CSS styling, among other things.
 
 In Chrome, you can access it with `Cmd+Alt+i`, or right-click "Inspect element".
 
 As of now, let's mainly look at the "Elements" tab -> it's a very powerful way to look at the page structure, and locate specific elements within the page.
 
-You can also gain some useful information on all of the elements by looking at the data on the right column of the console, most notably the CSS properties currently applied to the elements... and change them "live" (these changes, however, only apply to the page as displayed - it will not be saved in your CSS file, and all these changes disappear on the next page reload). 
+You can also gain some useful information on all of the elements by looking at the data on the right column of the console, most notably the CSS properties currently applied to the elements... and change them "live" (these changes, however, only apply to the page as displayed - it will not be saved in your CSS file, and all these changes disappear on the next page reload).
 
-We will get to play with this functionality more as we dig deeper into the CSS chapter. 
+We will get to play with this functionality more as we dig deeper into the CSS chapter.
 
 ------
 
@@ -226,15 +238,15 @@ Includes many confusing new "semantic" tags. These tags are (ironically) subject
 
 ####section
 	great container to how this is a grouping and all nested elements belong to one section
-	
+
 	a thematic grouping of content
 
-	Why is section preferred over div? Holds more info, used for grouping, a div has no special meaning 
+	Why is section preferred over div? Holds more info, used for grouping, a div has no special meaning
 
 Helpful links:
 
 http://stackoverflow.com/questions/6939864/what-is-the-difference-between-section-and-div
-	
+
 http://html5doctor.com/
 
 http://html5.validator.nu/
@@ -242,9 +254,9 @@ http://html5.validator.nu/
 	is content that makes sense on its own (e.g.- weblog)
 
 ####header
-	Defines a header for the document or a section 
+	Defines a header for the document or a section
 
-####Others	
+####Others
 - `<section>`
 - `<article>`
 - `<header>`
