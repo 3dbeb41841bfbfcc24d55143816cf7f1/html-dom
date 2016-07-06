@@ -14,7 +14,7 @@
 ## Differentation between HTML and DOM
 
 _HTML_: the language we use to create an HTML Web Page / Document
-_DOM_: the _D_ocument _O_bject _M_odel, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
+_DOM_: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
 
 Note that the _DOM_ can be _manipulated_ via _JavaScript_ code.
 
@@ -54,7 +54,7 @@ HTML is the skeleton of a website. It is the *structured content* of the website
 
 ### What is the DOM?
 
-- A browser receives a page as HTML and creates a model and stores it in memory creating a _D_ocument _O_bject _M_odel (a.k.a. the DOM tree).
+- A browser receives a page as HTML and creates a model and stores it in memory creating a Document Object Model (a.k.a. the DOM tree).
 
 ![DOM Tree](images/dom_tree.gif)
 
