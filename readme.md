@@ -226,32 +226,9 @@ For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.
 
 ## HTML 5 Tags
 
-#### header
-	Defines a header for the document or a section
+See [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
 
-#### Others
-- `<section>` - a grouping of similar content, typcically `articles`
-- `<article>` - content that makes sense on its own
-- `<header>`  - content that goes at the top (or side), usually for navigation
-- `<footer>`  - content that stays at the bottom, such as a copyright or contact info.
-- `<nav>`     - container for navigation links
-- `<main>`    - main content
-- `<aside>`   - side content
-- `<address>` - address information
-- `<cite>`    -
-
-HTML5 includes several new form input types, as well as several new form attributes that target mobile platforms:
-
-- `<input type="number">`
-- `<input type="slider">`
-- `<input type="date">`
-
-HTML5 includes many new multimedia-oriented tags. These tags were largely motivated by the decline of Flash, so provide new browser-native multimedia capabilities:
-
-- `<canvas>`
-- `<video>`
-- `<audio>`
-
+---
 
 ## Additional Resources
 
@@ -265,7 +242,7 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 * [HTML5 Validator](http://html5.validator.nu/)
 * [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML)
 
-----
+---
 
 ## Exercise #1
 
