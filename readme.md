@@ -44,13 +44,19 @@ HTML is the skeleton of a website. It is the *structured content* of the website
 
 ![Anatomy of an HTML Document](images/anatomy-of-an-html-doc.jpg)
 
-**WE DO:**
+The `<head>` section is for metadata and the `<body>` section is for the visible content of the web page.
 
-- Instructor holds up a newspaper. Asks students to identify the various parts/sections.
-- HTML would be the individual elements (recipe), DOM is what's rendered in the browser (fully baked recipe)
-- The idea is to start seeing the structure of a page instead of the content only.
-- Checkout [Wirify](https://www.wirify.com/)
-
+```html
+<!doctype html>
+<html>
+  <head>
+    <!-- document metadata goes here. -->
+  </head>
+  <body>
+    <!-- document contents go here. -->
+  </body>
+</html>
+```
 
 ### What is the DOM?
 
@@ -58,32 +64,31 @@ HTML is the skeleton of a website. It is the *structured content* of the website
 
 ![DOM Tree](images/dom_tree.gif)
 
-- The DOM has properties, methods and events that each browser implements in the same way.
+- The DOM has properties, methods and events.
 - Each DOM "element" is an object, and may be accessed and modified independently of other content.
-- Inspectible using the web inspector.
-- Defines a heirarchy for all content elements in the document.
+- The DOM is a `tree` data structure consisting of parent and child nodes.
 - In the console, type `document.` and check out the available methods.
-- Demo `document.lastModified` and `document.title`.
+- Demo `document.title` and `document.body.children[0]`.
 - Demo get element by class or id or tagname.
-- As with our earlier ESPN example, you can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('MARC')`
+- As with our earlier ESPN example, you can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('WDI Rocks!!!')`
 
 What is the Window Object?
 
 - Each browser window or tab
 - Location property is the URL of the page.
 - In the console, type `window.` an check out the available methods.
-- Demo `window.location`. Also, point out local storage.
+- Demo `window.location` and `window.document.write('Hello')`.
+- Also, point out `localStorage`.
 
 ## Introduction to HTML tags
-**YOU DO:**
 
-(Consider using the `html_practice_lab.md` [here](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) to have each student build a page in 15-ish min using git commits and GitHub. Then, choose a student to demo what they built as you guide them through the review notes below.)
+**YOU DO: Option 1**
 
+Consider using the [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) to have each student build a page in 15-ish min. Then, choose a student to demo what they built as you guide them through the review notes below.
 
-**YOU DO:**
+**YOU DO: Option 2**
 
-Pair up and have them look up the following tags below:
-
+Pair up and have students look up the following tags below:
 
 `<!DOCTYPE html>` -> informs the browser that this file is an HTML file
 
@@ -103,7 +108,8 @@ The "head" is important for search engines, as it helps provide additional infor
 
 We had these tags right after the opening `<html>` tag, and before the opening `<body>` tag.
 
-It is important to mention that `<meta>` "content" and "keywords" are outdated HTML elements, and most recent webpages don't use them anymore.
+> It is important to mention that `<meta>` "content" and "keywords" are outdated HTML elements, and most recent webpages don't use them anymore.
+
 `<head>...</head>`    -> contains the title, links to external stylesheets, js files, google fonts, etc, and meta tags.
 
 `<body>...</body>`    -> contains the body of the page we will display.
@@ -147,8 +153,6 @@ Add the href above to make this makes the image "clickable", and redirects to th
 `<span>...</span>`  -> inline element, allows us to isolate a bit of text and apply it a style with CSS (we'll see this later on today). SPAN elements take only the space they need on the page, as opposed to DIV elements.
 
 `<div>...</div>`    -> block element, these elements take up the whole width of the page, unless specific style is applied to them with CSS. They can contain paragraphs, headings, text, images, other divs, etc. They work as a way to structure the page with clearly delimited blocks.
-
-
 
 
 ## Creating a table in HTML
@@ -196,9 +200,7 @@ Table-specific tags:
 `<th>...</th>`    -> defines a cell within that row
 `<tbody>...</tbody>`  -> the body of the table
 
-REMEMBER: Don't use tables to define the layout of a page!
-
-
+> REMEMBER: Don't use tables to define the layout of a page! This is a very old and dated technique that results in a poor overall design that is not easily styled with CSS.
 
 ## Google Chrome Developer Tools
 
@@ -212,62 +214,33 @@ You can also gain some useful information on all of the elements by looking at t
 
 We will get to play with this functionality more as we dig deeper into the CSS chapter.
 
-------
+---
 
-#HTML5 Boilerplate
+## Other Topics
 
-Background:
+For information on accessibility and search engine optimization, see [Accessibility and SEO](accessibility-and-seo.md).
 
-[HTML5 Boilerplate](http://html5boilerplate.com/) was created by Paul Irish and Divya Manian and is an open source project that is perfect for creating HTML ready cross-browser sites that work with older browsers, including IE.
+For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.md).
 
-A tool know as [Modernizr](http://modernizr.com/) is included in order to allow you to style the new HTML5 elements in IE and helps with detecting HTML5 or CSS3 features in all browsers, including earlier versions of IE (before v9).
+---
 
-It I mention it helps with IE?
+## HTML 5 Tags
 
-Why should you care:
-
-Here's some of what it can do:
-
-![Why it is awesome](http://www.paulirish.com/wp-content/uploads/2010/08/html5boilerplate_ss.png)
-
-To be clear, HTML5 Boilerplate is **not a framework**. It's a template that can be modified and used for your own projects. You can use as much or as little as you want and make your own additions and subtractions. Still, it's one of the most robust and well-commented starting points we've seen for setting up a solid HTML5 base for your projects.
-
-used to have to use divs with classes and ids for descriptions.
-
-Includes many confusing new "semantic" tags. These tags are (ironically) subjective regarding their content roles, and thus invalidate their own value as content identifiers:
-
-####section
-	great container to how this is a grouping and all nested elements belong to one section
-
-	a thematic grouping of content
-
-	Why is section preferred over div? Holds more info, used for grouping, a div has no special meaning
-
-Helpful links:
-
-http://stackoverflow.com/questions/6939864/what-is-the-difference-between-section-and-div
-
-http://html5doctor.com/
-
-http://html5.validator.nu/
-####article
-	is content that makes sense on its own (e.g.- weblog)
-
-####header
+#### header
 	Defines a header for the document or a section
 
-####Others
-- `<section>`
-- `<article>`
-- `<header>`
-- `<footer>`
-- `<nav>`
-- `<main>`
-- `<aside>`
-- `<address>`
-- `<cite>`
+#### Others
+- `<section>` - a grouping of similar content, typcically `articles`
+- `<article>` - content that makes sense on its own
+- `<header>`  - content that goes at the top (or side), usually for navigation
+- `<footer>`  - content that stays at the bottom, such as a copyright or contact info.
+- `<nav>`     - container for navigation links
+- `<main>`    - main content
+- `<aside>`   - side content
+- `<address>` - address information
+- `<cite>`    -
 
-Includes several new form input types, as well as several new form attributes that target mobile platforms:
+HTML5 includes several new form input types, as well as several new form attributes that target mobile platforms:
 
 - `<input type="number">`
 - `<input type="slider">`
@@ -280,75 +253,28 @@ HTML5 includes many new multimedia-oriented tags. These tags were largely motiva
 - `<audio>`
 
 
-----
-## Web Accessibility / SEO
+## Additional Resources
 
-### Concepts
-- Define some common content accessibility considerations.
-- Explain what the Document Outline is, and why it's important.
-- Define what Section 508c is, and explain common requirements that address it.
-- Define what WCAG is, and explain common requirements that adddress it.
-- Define what ARIA roles are, and what they're used for.
-- Explain image "alt" texts, and what they're used for.
-- Explain cross-browser compatibility, and name a few major concerns.
-- Explain what SEO is, and why it's important.
-- Explain what the document `<title>` tag is, and why it's important.
-
-### Mechanics
-- Create an HTML document outline based on content heirarchy.
-- Configure ARIA roles on major content divisions.
-
-## Accessibility
-
-[Screen Reader](https://www.youtube.com/watch?v=KFPtxCDUPqs)
-
-* 0:00 - H1
-* 0:24 - bullet, links
-* 1:00 - H2
-* 1:17 - image
-
-### ARIA Roles
-
-**Accessible Rich Internet Applications**
-
-Roles may be assigned to any tag. They're typically added to block-level elements to denote the role of the block's internal content.
-
-```html
- <div role="banner">Welcome to my website!</div>
-```
-
-**Common roles**
-
-- `"banner"` : The page header block.
-- `"navigation"` : A region of major site navigation.
-- `"search"` : The region containing the site's search form.
-- `"main"` : The main content region of the page.
-- `"complementary"` : A region that complements the main (ie: a sidebar)
-- `"contentinfo"` : The page footer.
+* [Online HTML live editor](https://thimble.webmaker.org/en-US/projects/wrangler/)
+* [HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* [HTML5 element reference](https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
+* [Tim Berners-Lee](http://www.w3.org/People/Berners-Lee)
+* [Evolution of the Web - Great Link](http://www.evolutionoftheweb.com/)
+* [Stack Overflow: What is the difference between Section and Div](http://stackoverflow.com/questions/6939864/what-is-the-difference-between-section-and-div)
+* [HTML5 Doctor](http://html5doctor.com/)
+* [HTML5 Validator](http://html5.validator.nu/)
+* [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML)
 
 ----
 
-
-##ADDITIONAL RESOURCES
-
-HTML:
-
-* Online HTML live editor: <https://thimble.webmaker.org/en-US/projects/wrangler/>
-* HTML element reference: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element>
-* HTML5 element reference: https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list
-* Tim Berners-Lee: <http://www.w3.org/People/Berners-Lee/>
-* Evolution of the Web: <http://www.evolutionoftheweb.com/> (you'll love it)
-* Semantic HTML: <http://en.wikipedia.org/wiki/Semantic_HTML>
-
-----
 ## Exercise #1
 
-Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website…
+Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website:
+
 [How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
 
-[Starter Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
-
-[Finished Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline_fin.html)
+* [Starter Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
+* [Finished Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline_fin.html)
 
 ## Exercise #2
 
