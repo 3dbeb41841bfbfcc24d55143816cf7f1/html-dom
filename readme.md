@@ -1,6 +1,20 @@
 # Intro to HTML & the DOM
 
-### Learning Objectives
+## Table of Contents
+* [Learning Objectives](#learning-objectives)
+* [Preparation](#preparation)
+* [Differentation between HTML and DOM](#differentation-between-html-and-dom)
+* [Introduction to HTML tags](#introduction-to-html-tags)
+* [Creating a table in HTML](#creating-a-table-in-html)
+* [Google Chrome Developer Tools](#google-chrome-developer-tools)
+* [HTML 5 Tags](#html-5-tags)
+* [Other Topics](#other-topics)
+* [Additional Resources](#additional-resources)
+* [Exercise #1](#exercise-#1)
+* [Exercise #2](#exercise-#2)
+
+
+## Learning Objectives
 * Build a simple web page using HTML
 * Explain the various parts of an HTML document, including:
   - the `<head>` and `<body>` tags
@@ -8,7 +22,7 @@
   - common elements such as `<h1>`, `<h2>`, `<p>`, `<ul>`, and `<li>`
 * Explain the difference between _HTML_ and the _DOM_
 
-### Preparation
+## Preparation
 - Pre-work and About Me page completion
 
 ## Differentation between HTML and DOM
@@ -216,17 +230,17 @@ We will get to play with this functionality more as we dig deeper into the CSS c
 
 ---
 
+## HTML 5 Tags
+
+See [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
+
+---
+
 ## Other Topics
 
 For information on accessibility and search engine optimization, see [Accessibility and SEO](accessibility-and-seo.md).
 
 For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.md).
-
----
-
-## HTML 5 Tags
-
-See [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
 
 ---
 
