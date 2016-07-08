@@ -124,37 +124,47 @@ We had these tags right after the opening `<html>` tag, and before the opening `
 
 > It is important to mention that `<meta>` "content" and "keywords" are outdated HTML elements, and most recent webpages don't use them anymore.
 
-`<head>...</head>`    -> contains the title, links to external stylesheets, js files, google fonts, etc, and meta tags.
+## Common HTML Elements
 
-`<body>...</body>`    -> contains the body of the page we will display.
+### Meta Tags
 
-`<p>...</p>`   -> paragraph
+| Element        | Description                                               |
+|:-------------- |:--------------------------------------------------------- |
+| `<link>`       | used to load a CSS file - it is self closing. |
+| `<script>`     | used to load a JavaScript file or for embedding JavaScript code. |
 
-`<b>...</b>`   -> makes the wrapped word/text bold - prefer to avoid this tag due to it offering presentation rather than semantic meaning
 
-`<strong>...</strong>`  -> a bit similar to bold, the browser interprets this as an important bit of text, and will direct the reader's attention to it.
 
-`<i>...</i>`      -> makes the wrapped word/text italic - prefer to avoid this tag due to it offering presentation rather than semantic meaning
 
-`<em>...</em>`    -> a bit similar to italic, used by the browser to add emphasis on a word.
 
-`<h1>...</h1>` to` <h6>...</h6>` -> headings, from big to small
 
-`<ul>...</ul>`    -> unordered list (bullet points)
+### Containers
 
-`<ol>...</ol>`    -> ordered list (numbered)
+| Element        | Description                                               |
+|:-------------- |:--------------------------------------------------------- |
+| `<head>`       | contains metadata about the page, including the title, links to external stylesheets, js files, google fonts, etc, and other meta tags. |
+| `<body>`       | contains the body of the page we will display. |
+| `<div>`        | a container used for grouping child elements. DIVs are _block_ elements that take up the whole width of the page unless specific style is applied to them to do otherwise. They can contain paragraphs, headings, text, images, other divs, etc. They work as a way to structure the page with clearly delimited blocks. |
+| `<ul>...</ul>` | an unordered list (bullet points) of `<li>` elements |
+| `<ol>...</ol>` | an ordered list (numbered) of `<li>` elements |
 
-`<li>...</li>`    -> elements to be put within the ordered/unordered list tags
+### Content
 
-`<br />`        -> self-closing tag, allowing you to break the content (CSS will allow us to achieve the same result, in a better way).
+| Element       | Description                                               |
+|:------------- |:--------------------------------------------------------- |
+| `<p>...</p>`   | a simple paragraph |
+| `<span>...</span>`  | inline element, allows us to isolate a bit of text and apply a style to it using CSS (more on this later). |
+| `<h1>...</h1>` | Level 1 heading |
+| `<h2>...</h2>` | Level 1 heading |
+| `<h3>...</h3>` | Level 1 heading |
+| `<h4>...</h4>` | Level 1 heading |
+| `<h5>...</h5>` | Level 1 heading |
+| `<h6>...</h6>` | Level 1 heading |
+| `<li>...</li>` | elements to be put within the ordered/unordered list tags |
+| `<img src="url" alt="description" /> ` | image tag. This is a self-closing tag, meaning you don't need a closing </img> tag. It should include the source of the file (can be a url or a file path) and a description (alt) for the search engines.
+| `<a href="url">...</a>` | hyperlink to another page; needs to include an href which is the url it is linking to. You can add a `target="_blank` which will open the link in a new tab in the browser. We can also wrap images within `<a>` tags to transform it into a link.
 
-`<img src="url" alt="description" /> `-> image tag. This is a self-closing tag, meaning you don't need a </img> tag. It should include the source of the file (can be a url or a file path) and a description (alt) for the search engines.
-
-`<link>` -> self closing
-
-`<a href="url">...</a>` -> link to another page; needs to include a href, which is the url it is linking to. You can add a `target="_blank` which will open the link into a new tab in the browser. We can also wrap images within `<a>` tags to transform it into a link.
-
-In our code example above:
+#### Example of an Anchor containing an Image
 
 ```html
 <a href="www.w3.org" target="_blank">
@@ -162,12 +172,22 @@ In our code example above:
 </a>
 ```
 
-Add the href above to make this makes the image "clickable", and redirects to the W3 website.
+The `href` above makes the image "clickable" and redirects to the W3 website.
 
-`<span>...</span>`  -> inline element, allows us to isolate a bit of text and apply it a style with CSS (we'll see this later on today). SPAN elements take only the space they need on the page, as opposed to DIV elements.
 
-`<div>...</div>`    -> block element, these elements take up the whole width of the page, unless specific style is applied to them with CSS. They can contain paragraphs, headings, text, images, other divs, etc. They work as a way to structure the page with clearly delimited blocks.
+### Styled Text
 
+These tags can be used to set a specific style to text in an HTML document.
+
+> NOTE: You should usually avoid these tags as it is better to use CSS for styling content.
+
+| Element       | Description                                               |
+|:------------- |:--------------------------------------------------------- |
+| `<b>...</b>`  | makes the wrapped text bold |
+| `<strong>...</strong>` | a bit similar to bold, the browser interprets this as an important bit of text, and will direct the reader's attention to it. |
+| `<i>...</i>`  | makes the wrapped text italic. |
+| `<em>...</em>` | a bit similar to italic, used by the browser to add emphasis on a word. |
+| `<br />`       | self-closing tag, allowing you to break the content (CSS will allow us to achieve the same result, in a better way). |
 
 ## Creating a table in HTML
 
@@ -248,6 +268,7 @@ For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.
 
 * [Online HTML live editor](https://thimble.webmaker.org/en-US/projects/wrangler/)
 * [HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* [HTML Elements by Category](http://www.w3schools.com/tags/ref_byfunc.asp)
 * [HTML5 element reference](https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list)
 * [Tim Berners-Lee](http://www.w3.org/People/Berners-Lee)
 * [Evolution of the Web - Great Link](http://www.evolutionoftheweb.com/)
