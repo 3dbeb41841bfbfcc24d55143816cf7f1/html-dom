@@ -155,11 +155,11 @@ We had these tags right after the opening `<html>` tag, and before the opening `
 | `<p>...</p>`   | a simple paragraph |
 | `<span>...</span>`  | inline element, allows us to isolate a bit of text and apply a style to it using CSS (more on this later). |
 | `<h1>...</h1>` | Level 1 heading |
-| `<h2>...</h2>` | Level 1 heading |
-| `<h3>...</h3>` | Level 1 heading |
-| `<h4>...</h4>` | Level 1 heading |
-| `<h5>...</h5>` | Level 1 heading |
-| `<h6>...</h6>` | Level 1 heading |
+| `<h2>...</h2>` | Level 2 heading |
+| `<h3>...</h3>` | Level 3 heading |
+| `<h4>...</h4>` | Level 4 heading |
+| `<h5>...</h5>` | Level 5 heading |
+| `<h6>...</h6>` | Level 6 heading |
 | `<li>...</li>` | elements to be put within the ordered/unordered list tags |
 | `<img src="url" alt="description" /> ` | image tag. This is a self-closing tag, meaning you don't need a closing </img> tag. It should include the source of the file (can be a url or a file path) and a description (alt) for the search engines.
 | `<a href="url">...</a>` | hyperlink to another page; needs to include an href which is the url it is linking to. You can add a `target="_blank` which will open the link in a new tab in the browser. We can also wrap images within `<a>` tags to transform it into a link.
