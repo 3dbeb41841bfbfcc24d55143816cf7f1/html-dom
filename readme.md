@@ -191,7 +191,18 @@ These tags can be used to set a specific style to text in an HTML document.
 
 ## Creating a table in HTML
 
-We use the `<table>` tags to display tabular data.
+We can use the `<table>` tags to display tabular data.
+
+Table-specific tags:
+
+| Element       | Description                                               |
+|:------------- |:--------------------------------------------------------- |
+| `<table>...</table>`  | contains the table data, and defines the table structure |
+| `<thead>...</thead>`  | the head of the table (bolder text) - optional
+| `<tr>...</tr>` | defines a row
+| `<th>...</th>` | defines a cell within that row
+| `<tbody>...</tbody>` | the body of the table
+
 
 Example:
 
@@ -209,12 +220,12 @@ Example:
           <td>September 15</td>
           <td>75 kg</td>
           <td>1.8 km</td>
-        <tr>
+        </tr>
         <tr>
           <td>September 29</td>
           <td>73 kg</td>
           <td>2.1 km</td>
-        <tr>
+        </tr>
       </tbody>
   </table>
 ```
@@ -226,15 +237,15 @@ Date | Weight | Distance Walked
 September 15 | 75 kg |1.8 km
 September 29 |73 kg | 2.1 km
 
-Table-specific tags:
+> REMEMBER: Don't use tables to define the layout of a page! This is a very old and outdated technique that results in a poor overall design that is not easily styled with CSS and is not *responsive* to varying screen sizes.
 
-`<table>...</table>`  -> contains the table data, and defines the table structure
-`<thead>...</thead>`  -> the head of the table (bolder text) - optional
-`<tr>...</tr>`    -> defines a row
-`<th>...</th>`    -> defines a cell within that row
-`<tbody>...</tbody>`  -> the body of the table
+---
 
-> REMEMBER: Don't use tables to define the layout of a page! This is a very old and dated technique that results in a poor overall design that is not easily styled with CSS.
+## HTML Cheatsheet
+
+![Anatomy of an HTML Document](images/html-cheat-sheet-v1.png)
+
+---
 
 ## Google Chrome Developer Tools
 
@@ -291,4 +302,3 @@ Using HTML tags only (don't worry about CSS), use the starter code below to recr
 ## Exercise #2
 
 Clone your HTML/DOM repo and work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise.
-
