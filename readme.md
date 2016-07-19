@@ -27,8 +27,8 @@
 
 ## Differentation between HTML and DOM
 
-_HTML_: the language we use to create an HTML Web Page / Document
-_DOM_: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
+* _HTML_: the language we use to create an HTML Web Page / Document
+* _DOM_: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
 
 Note that the _DOM_ can be _manipulated_ via _JavaScript_ code.
 
@@ -48,11 +48,11 @@ Questions:
 
 - Did I just hack Craigslist?
 - What happens if I refresh the page?
-- What am we actually changing- the HTML or the DOM?
+- What am we actually changing - the HTML or the DOM?
 
 
 ### What is HTML?
-HTML stands for "Hyper Text Markup Language". It is not a general purpose programming language like JavaScript or Ruby but rather a _markup_ language, i.e. a language for representing structured text.
+HTML stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a _markup_ language, i.e. a language for representing structured text.
 
 HTML is the skeleton of a website. It is the *structured content* of the website.
 
@@ -79,7 +79,7 @@ The `<head>` section is for metadata and the `<body>` section is for the visible
 ![DOM Tree](images/dom_tree.gif)
 
 - The DOM has properties, methods and events.
-- Each DOM "element" is an object, and may be accessed and modified independently of other content.
+- Each DOM *element* is an object, and may be accessed and modified independently of other content.
 - The DOM is a `tree` data structure consisting of parent and child nodes.
 - In the console, type `document.` and check out the available methods.
 - Demo `document.title` and `document.body.children[0]`.
@@ -96,19 +96,16 @@ What is the Window Object?
 
 ## Introduction to HTML tags
 
-**YOU DO: Option 1**
+**YOU DO**
 
 Consider using the [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) to have each student build a page in 15-ish min. Then, choose a student to demo what they built as you guide them through the review notes below.
 
-**YOU DO: Option 2**
+### Basic Structure of an HTML Document
 
-Pair up and have students look up the following tags below:
+* `<!DOCTYPE html>` -> informs the browser that this file is an HTML file
+* `<html>...</html>` -> contains your html content - it will tell the browser that everything within these tags should be interpreted as HTML.
 
-`<!DOCTYPE html>` -> informs the browser that this file is an HTML file
-
-`<html>...</html>` -> contains your html content - it will tell the browser that everything within these tags should be interpreted as HTML.
-
-When opening a new html file, it is important to include a "head".
+When opening a new html file, it is important to include a `head` section.
 
 ```html
 <head>
@@ -118,11 +115,10 @@ When opening a new html file, it is important to include a "head".
 </head>
 ```
 
-The "head" is important for search engines, as it helps provide additional information about the website. Anything within the <head> tags will NOT be displayed on the page.
+The `head` is important for search engines, as it helps provide additional information about the website. Anything within the `<head>` and `</head>` tags will NOT be displayed on the page.
 
-We had these tags right after the opening `<html>` tag, and before the opening `<body>` tag.
+We place these tags right after the opening `<html>` tag, and before the opening `<body>` tag.
 
-> It is important to mention that `<meta>` "content" and "keywords" are outdated HTML elements, and most recent webpages don't use them anymore.
 
 ## Common HTML Elements
 
@@ -132,11 +128,6 @@ We had these tags right after the opening `<html>` tag, and before the opening `
 |:-------------- |:--------------------------------------------------------- |
 | `<link>`       | used to load a CSS file - it is self closing. |
 | `<script>`     | used to load a JavaScript file or for embedding JavaScript code. |
-
-
-
-
-
 
 ### Containers
 
