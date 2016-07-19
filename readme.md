@@ -94,6 +94,13 @@ What is the Window Object?
 - Demo `window.location` and `window.document.write('Hello')`.
 - Also, point out `localStorage`.
 
+## HTML vs. DOM Vocabulary
+
+| HTML          | DOM           |  Example                              |
+|:-------------:|:-------------:|:------------------------------------- |
+| tag / element | node          | `<p>This is a paragraph</p>`          |
+| attribute     | property      | `<a href="www.google.com">Google</a>` |
+
 ## Introduction to HTML tags
 
 **YOU DO**
