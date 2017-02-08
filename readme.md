@@ -43,7 +43,6 @@ Questions:
 - What happens if I refresh the page?
 - What am we actually changing - the HTML or the DOM?
 
-
 ## Differentation between HTML and DOM
 
 * _HTML_: the language we use to create an HTML Web Page / Document
