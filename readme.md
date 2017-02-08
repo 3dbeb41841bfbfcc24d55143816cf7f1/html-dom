@@ -25,13 +25,6 @@
 ## Preparation
 - Pre-work and About Me page completion
 
-## Differentation between HTML and DOM
-
-* _HTML_: the language we use to create an HTML Web Page / Document
-* _DOM_: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
-
-Note that the _DOM_ can be _manipulated_ via _JavaScript_ code.
-
 ### Hook (5 min)
 We're gonna get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [ESPN](http://espn.go.com/) web site and play around with some headlines.
 
@@ -40,7 +33,7 @@ Using the Chrome DevTools Inspector, alter something on the page.
 Then go to [Atlanta Craigslist](https://atlanta.craigslist.org/) and try running the following `javascript` DOM manipulation code in the JavaScript console:
 
 ```javascript
-document.getElementById('logo').children[0].text = 'MikesList';
+document.getElementById('logo').children[0].text = 'MarensList';
 document.getElementsByClassName('ban')[0].children[0].text = 'WDI Rocks!'
 ```
 
@@ -49,6 +42,14 @@ Questions:
 - Did I just hack Craigslist?
 - What happens if I refresh the page?
 - What am we actually changing - the HTML or the DOM?
+
+
+## Differentation between HTML and DOM
+
+* _HTML_: the language we use to create an HTML Web Page / Document
+* _DOM_: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
+
+Note that the _DOM_ can be _manipulated_ via _JavaScript_ code.
 
 
 ### What is HTML?
