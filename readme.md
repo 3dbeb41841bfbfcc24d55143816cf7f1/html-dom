@@ -25,12 +25,38 @@
 ## Preparation
 - Pre-work and About Me page completion
 
+## Intro + Hook
+### Intro
+**YOU DO**
+- 5 min - Read this article on the difference between HTML and the DOM from [CSS Tricks](https://css-tricks.com/dom/) 
+- 5 min - Pair and Share - discuss what you learned with your partner
+- 5 min - Ask each group for something they learned in the article
+
 ### Hook (5 min)
+This morning we're gonna take a look at the DOM and how we can use the Chrome Dev Tools to manipulate and test it out. This afternoon we'll use more advanced ways to perform DOM manipulation using Javascript.
+
+<details>
+<summary>To start, can someone describe the difference between HTML and the DOM in their own words?</summary>
+The DOM (Document Object Model) is the browser's intrepretation of the HTML. Your browser creates objects out of the HTML elements.
+
+examples: 
+
+- skeleton => HTML, body => DOM
+- song chords, lyrics => HTML, recorded song => DOM
+- recipe ingredients => HTML, finished dish => DOM
+
+</details>
+
+
+**WE DO:** Goto [Kickass App](http://kickassapp.com/) and use it. What is happening?
+
+
 We're gonna get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [Jezebel](http://jezebel.com/) web site and play around with some headlines.
 
 Using the Chrome DevTools Inspector, alter something on the page.
 
-Then go to [Atlanta Craigslist](https://atlanta.craigslist.org/) and try running the following `javascript` DOM manipulation code in the JavaScript console:
+
+**YOU DO** Go to [Atlanta Craigslist](https://atlanta.craigslist.org/) and try running the following `javascript` DOM manipulation code in the JavaScript console:
 
 ```javascript
 document.getElementById('logo').children[0].text = 'MarensList';
@@ -294,6 +320,7 @@ For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.
 * [HTML5 Doctor](http://html5doctor.com/)
 * [HTML5 Validator](http://html5.validator.nu/)
 * [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML)
+* [CSS Tricks](https://css-tricks.com/dom/)
 
 ---
 
