@@ -255,7 +255,10 @@ September 29 |73 kg | 2.1 km
 
 Let us have a quick first look at **Chrome Developer Tools**. Available as a console in Google Chrome, it allows us to get a lot of information about the page we're on, providing a detailed look into the HTML structure of the page and the CSS styling, among other things.
 
-In Chrome, you can access it with `Cmd+Alt+i`, or right-click "Inspect element".
+In Chrome, you can access it with:
+  - `Cmd+Alt+i` on a Mac
+  - `Ctrl + Shift + C` or `F12` on Windows
+  - right-click on the browser and click on "Inspect element"
 
 As of now, let's mainly look at the "Elements" tab -> it's a very powerful way to look at the page structure, and locate specific elements within the page.
 
