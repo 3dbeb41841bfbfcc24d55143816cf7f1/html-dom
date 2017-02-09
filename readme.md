@@ -26,7 +26,7 @@
 - Pre-work and About Me page completion
 
 ### Hook (5 min)
-We're gonna get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [ESPN](http://espn.go.com/) web site and play around with some headlines.
+We're gonna get into DOM manipulation later in the week, but to demonstrate the difference between an _HTML_ document and the _DOM_ that is created from the _HTML_ document, let's go to the [Jezebel](http://jezebel.com/) web site and play around with some headlines.
 
 Using the Chrome DevTools Inspector, alter something on the page.
 
@@ -82,17 +82,23 @@ The `<head>` section is for metadata and the `<body>` section is for the visible
 - Each DOM *element* is an object, and may be accessed and modified independently of other content.
 - The DOM is a `tree` data structure consisting of parent and child nodes.
 - In the console, type `document.` and check out the available methods.
-- Demo `document.title` and `document.body.children[0]`.
-- Demo get element by class or id or tagname.
-- As with our earlier ESPN example, you can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('WDI Rocks!!!')`
+- In the console, type `document.title`.
+- In the console, type `document.body.children[0]`.
 
-What is the Window Object?
+- Go to Jezebel.
+- In the console, type `document.getElementsByClassName('headline')[0];`
+- Update that title to have the id="first-title"
+- In the console, type `document.getElementsByClassName('first-title');`
 
-- Each browser window or tab
+- As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('WDI Rocks!!!')`. You traditionally only use document.write for testing purposes.
+
+## What is the Window Object?
+
+- Represents the window that is open in the browser.
 - Location property is the URL of the page.
-- In the console, type `window.` an check out the available methods.
-- Demo `window.location` and `window.document.write('Hello')`.
-- Also, point out `localStorage`.
+- In the console, type `window.` and check out the available methods.
+- In the console, type `window.location`.
+- In the console, type `window.document.write('Hello')`.
 
 ## HTML vs. DOM Vocabulary
 
