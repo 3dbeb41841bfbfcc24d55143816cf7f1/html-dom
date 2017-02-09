@@ -257,7 +257,7 @@ Let us have a quick first look at **Chrome Developer Tools**. Available as a con
 
 In Chrome, you can access it with:
   - `Cmd+Alt+i` on a Mac
-  - `Ctrl + Shift + C` or `F12` on Windows
+  - `Ctrl + Shift + C` or `F12` on Windows or Linux
   - right-click on the browser and click on "Inspect element"
 
 As of now, let's mainly look at the "Elements" tab -> it's a very powerful way to look at the page structure, and locate specific elements within the page.
