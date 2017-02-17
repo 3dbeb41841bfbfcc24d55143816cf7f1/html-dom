@@ -125,7 +125,7 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 ![DOM Tree](images/dom_tree.gif)
 
 - The DOM is a **tree-like structure** or data structure, similar to an outline, that consists of parent and child nodes that represent each element on our site.
-- The DOM has properties(a value that you can get or set), methods(an action that you can do) and events(when a user interacts with the page- by clicking on a button or mousing over an element).
+- The DOM has properties (a value that you can get or set), methods (an action that you can do) and events (what happens when a user interacts with the page- by clicking on a button or mousing over an element).
 - The DOM defines each HTML **element** is an object. These objects may be accessed and modified, using properties and methods, in order to change them.
 
 - In the console, type `document.` and check out the available methods.
