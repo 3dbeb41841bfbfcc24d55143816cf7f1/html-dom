@@ -131,7 +131,7 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 - In the console, type `document.` and check out the available methods.
 - In the console, type `document.title`.
 <details>
-<summaryWhat do you expect to see?</summary>
+<summary>What do you expect to see?</summary>
 The `document.title` is going to output the title of the website, or what you see in your browser tab.
 </details>
 - In the console, type `document.body.children[5]`.
