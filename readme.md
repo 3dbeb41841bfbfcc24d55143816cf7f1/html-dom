@@ -86,22 +86,23 @@ You are changing the DOM.  The developers at Craigslist will not be worried that
 
 ## Let's Differentiate between HTML and the DOM
 
-* **HTML**: the language we use to create an HTML Web Page / Document
-* **DOM**: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
+* **HTML**: the language we use to create an HTML Page/Document
+* **DOM**: the Document Object Model, i.e. the in-memory representation of the HTML page, that is created every time the browser _renders_ the HTML document.
 
-Note that the _DOM_ can be _manipulated_ via _JavaScript_ code.
+**Note**: the _DOM_ can be _manipulated_ via _JavaScript_ code.  And we will discuss this in further detail next week.
 
+<br />
 
 ### What is HTML?
-**HTML** stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a **markup** language, i.e. a language for representing structured text.
+**HTML** stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a **markup language**, i.e. a language for representing structured text.
 
 To create any website, you need HTML, CSS and JavaScript.  While CSS provides the style and color for a site, and JavaScript allows interaction with the end user, HTML creates the skeleton of a website. It is the *structured content*.
 
 ![Anatomy of an HTML Document](images/anatomy-of-an-html-doc.jpg)
 
-The `<head>` section is for metadata which gives the browser information about the site. 
+The `<head>` section is for metadata, which gives the browser information about the site.  Inside of the head, we would add the title of our website- which is what you see in the browser tab, any link tags to css pages.     
 
-The `<body>` section is for the visible content on a web page.
+The `<body>` section is for the visible content on a web page.  As well as our JavaScript `<script>` tags.
 
 ```html
 <!doctype html>
@@ -115,23 +116,28 @@ The `<body>` section is for the visible content on a web page.
 </html>
 ```
 
+<br />
+
 ### What is the DOM?
 
-- A browser receives a page as HTML and creates a Document Object Model (a.k.a. the DOM tree) that it stores in memory.
+- A browser receives a page as HTML and creates a **Document Object Model** (a.k.a. the DOM tree) that it stores in memory.
 
 ![DOM Tree](images/dom_tree.gif)
 
 - The DOM has properties, methods and events.
-- Each DOM *element* is an object, and may be accessed and modified independent of the other content.
-- The DOM is a `tree` or data structure, similar to an outline, that consists of parent and child nodes.
+- Each DOM **element** is an object, and may be accessed and modified independent of any other content.
+- The DOM is a `tree`-like structure or data structure, similar to an outline, that consists of parent and child nodes that represent each element on our site.
 
 - In the console, type `document.` and check out the available methods.
 - In the console, type `document.title`.
-  - What do you expect to see?
-  - The `document.title` is going to output the title of the website, or what you see in your browser tab.
+  <detail>
+    <summaryWhat do you expect to see?</summary>
+    The `document.title` is going to output the title of the website, or what you see in your browser tab.
+  </detail>
 - In the console, type `document.body.children[5]`.
-  - This will show the main content of our webpage, and we can narrow it down further from there.
+  - This will show highlight main content div of our webpage, and we can narrow it down further/highlight other content from there.
 
+#### **WE DO**
 - Go to Jezebel.
 - In the console, type `document.getElementsByClassName('headline')[0];`
   - We will discuss this more later, but getElementsByClassName, returns an array/list of items with that class.  Arrays are zero-indexed, which means that they start with zero, so we need to add that number in square brackets to highligh the first title. 
@@ -143,13 +149,22 @@ The `<body>` section is for the visible content on a web page.
 
 - As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the page, the changes are gone. Try `document.write('WDI Rocks!!!')`. (Traditionally, you only use document.write for testing purposes because you don't have any control over where it renders on the page, and it overwrites everything else).
 
+<br />
+
 ## What is the Window Object?
 
 - Represents the window that is open in the browser.
 - Location property is the URL of the page.
 - In the console, type `window.` and check out the available methods.
 - In the console, type `window.location`.
+  <details>
+    <summary>What do you expect to see?</summary>
+
+  </details>
 - In the console, type `window.document.write('Hello')`.
+  <details>
+    <summary>Knowing what happened before, what do you expect this statement to do?</summary>
+  </details>
 
 ## HTML vs. DOM Vocabulary
 
