@@ -25,14 +25,7 @@
 ## Preparation
 - Pre-work and About Me page completion
 
-## Intro + Hook
-### Intro
-**YOU DO**
-- 5 min - Read this article on the difference between HTML and the DOM from [CSS Tricks](https://css-tricks.com/dom/) 
-- 5 min - Pair and Share - discuss what you learned with your partner
-- 5 min - Ask each group for something they learned in the article
-
-### Hook (5 min)
+## Hook (5m)
 This morning we're gonna take a look at the DOM and how we can use the Chrome Dev Tools to manipulate and test it out. This afternoon we'll use more advanced ways to perform DOM manipulation using Javascript.
 
 <details>
@@ -65,26 +58,48 @@ document.getElementsByClassName('ban')[0].children[0].text = 'WDI Rocks!'
 
 Questions:
 
-- Did I just hack Craigslist?
-- What happens if I refresh the page?
-- What am we actually changing - the HTML or the DOM?
+<details>
+<summary>Did I just hack Craigslist?</summary>
+No. We manipulated the DOM, or what existed in the browser's memory.
+</details>
+<details>
+<summary>What happens if I refresh the page?</summary>
+All of your changes will disappear.  
+</details>
+<details>
+<summary>What are we actually changing - the HTML or the DOM?</summary>
+You are changing the DOM.  The developers at Craigslist will not be worried that their site is now called 'MarensList'.
+</details>
 
-## Differentation between HTML and DOM
+<br />
 
-* _HTML_: the language we use to create an HTML Web Page / Document
-* _DOM_: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
+## **YOU DO**
+- 5 min - Read this article on the difference between HTML and the DOM from [CSS Tricks](https://css-tricks.com/dom/) 
+- 5 min - Pair and Share - discuss what you learned with your partner
+- 5 min - Ask each group for something they learned in the article
+
+<br />
+
+---
+
+## Differentiate between HTML and DOM
+
+* **HTML**: the language we use to create an HTML Web Page / Document
+* **DOM**: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
 
 Note that the _DOM_ can be _manipulated_ via _JavaScript_ code.
 
 
 ### What is HTML?
-HTML stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a _markup_ language, i.e. a language for representing structured text.
+**HTML** stands for "Hyper Text Markup Language". It is not a general purpose programming language like *JavaScript* or _Ruby_ but rather a **markup** language, i.e. a language for representing structured text.
 
-HTML is the skeleton of a website. It is the *structured content* of the website.
+To create any website, you need HTML, CSS and JavaScript.  While CSS provides the style and color for a site, and JavaScript allows interaction with the end user, HTML creates the skeleton of a website. It is the *structured content*.
 
 ![Anatomy of an HTML Document](images/anatomy-of-an-html-doc.jpg)
 
-The `<head>` section is for metadata and the `<body>` section is for the visible content of the web page.
+The `<head>` section is for metadata which gives the browser information about the site. 
+
+The `<body>` section is for the visible content on a web page.
 
 ```html
 <!doctype html>
@@ -100,23 +115,31 @@ The `<head>` section is for metadata and the `<body>` section is for the visible
 
 ### What is the DOM?
 
-- A browser receives a page as HTML and creates a model and stores it in memory creating a Document Object Model (a.k.a. the DOM tree).
+- A browser receives a page as HTML and creates a Document Object Model (a.k.a. the DOM tree) that it stores in memory.
 
 ![DOM Tree](images/dom_tree.gif)
 
 - The DOM has properties, methods and events.
-- Each DOM *element* is an object, and may be accessed and modified independently of other content.
-- The DOM is a `tree` data structure consisting of parent and child nodes.
+- Each DOM *element* is an object, and may be accessed and modified independent of the other content.
+- The DOM is a `tree` or data structure, similar to an outline, that consists of parent and child nodes.
+
 - In the console, type `document.` and check out the available methods.
 - In the console, type `document.title`.
-- In the console, type `document.body.children[0]`.
+  - What do you expect to see?
+  - The `document.title` is going to output the title of the website, or what you see in your browser tab.
+- In the console, type `document.body.children[5]`.
+  - This will show the main content of our webpage, and we can narrow it down further from there.
 
 - Go to Jezebel.
 - In the console, type `document.getElementsByClassName('headline')[0];`
+  - We will discuss this more later, but getElementsByClassName, returns an array/list of items with that class.  Arrays are zero-indexed, which means that they start with zero, so we need to add that number in square brackets to highligh the first title. 
+  - This will highlight the first news title on the page.
 - Update that title to have the id="first-title"
-- In the console, type `document.getElementsByClassName('first-title');`
+  - The funny thing is that Jezebel doesn't really use ids, so in order to access and Id, we need to take the initiative to add it ourselves.
+- In the console, type `document.getElementById('first-title');`
+  - This statement will also highlight the first news title on the page, but in a different way.
 
-- As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the changes are gone. Try `document.write('WDI Rocks!!!')`. You traditionally only use document.write for testing purposes.
+- As with our earlier Jezebel example, you can change the HTML in the inspector but when you re-render the page, the changes are gone. Try `document.write('WDI Rocks!!!')`. (Traditionally, you only use document.write for testing purposes because you don't have any control over where it renders on the page, and it overwrites everything else).
 
 ## What is the Window Object?
 
