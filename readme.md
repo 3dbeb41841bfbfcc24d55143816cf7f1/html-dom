@@ -120,13 +120,13 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 
 ### What is the DOM?
 
-- A browser receives a page as HTML and creates a **Document Object Model** (a.k.a. the DOM tree) that it stores in memory.
+- A browser receives a page as HTML and creates a **Document Object Model** (a.k.a. the DOM tree) that it stores in memory.  The DOM defines a standard for accessing your HTML document.
 
 ![DOM Tree](images/dom_tree.gif)
 
-- The DOM has properties, methods and events.
-- Each DOM **element** is an object, and may be accessed and modified independent of any other content.
 - The DOM is a `tree`-like structure or data structure, similar to an outline, that consists of parent and child nodes that represent each element on our site.
+- The DOM has properties(a value that you can get or set), methods(an action that you can do) and events(when a user interacts with the page- by clicking on a button or mousing over an element).
+- The DOM defines each HTML **element** is an object. These objects may be accessed and modified, using properties and methods, in order to change them.
 
 - In the console, type `document.` and check out the available methods.
 - In the console, type `document.title`.
@@ -135,7 +135,11 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 The `document.title` is going to output the title of the website, or what you see in your browser tab.
 </details>
 - In the console, type `document.body.children[5]`.
-  - This will show highlight main content div of our webpage, and we can narrow it down further/highlight other content from there.
+<details>
+<summary>What do you expect to see?</summary>
+This statement will highlight the main content div, and we can click through and highlight other content from there.
+</details>
+
 
 #### **WE DO**
 - Go to Jezebel.
@@ -153,9 +157,17 @@ The `document.title` is going to output the title of the website, or what you se
 
 ## What is the Window Object?
 
-- Represents the window that is open in the browser.
-- Location property is the URL of the page.
+- The **Window Object** represents the window that is open in the browser.
+- The location property is the URL of the page.
 - In the console, type `window.` and check out the available methods.
+<details>
+<summary>Do you recognize any of these methods?</summary>
+`alert()` will alert a message to the user.
+`focus()` will set the focus/cursor in an input box- this is helpful with forms. 
+`prompt()` displays a dialogue box to the user.
+`setInterval()` calls a function or expression at specified intervals (in milliseconds).
+`setTimeOut()` calls a function or expression after a certain amount of time (in milliseconds).
+</details>
 - In the console, type `window.location`.
 <details>
 <summary>What do you expect to see?</summary>
@@ -168,7 +180,7 @@ The `document.title` is going to output the title of the website, or what you se
 - In the console, type `window.document.write('Hello')`.
 <details>
 <summary>Knowing what happened before, what do you expect this statement to do?</summary>
-It will write over everything that exists on the webpage with the string 'Hello'.
+It will write over everything that exists on the webpage with the string 'Hello'.  Notice that this is similar to `document.write`.  The only difference is that we added `window.` in front of that statement.  `Document`, returns the document object for the window.  Often, the `window.` is left off of window object methods.
 </details>
 
 ## HTML vs. DOM Vocabulary
