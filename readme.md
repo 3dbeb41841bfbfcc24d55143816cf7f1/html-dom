@@ -130,10 +130,10 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 
 - In the console, type `document.` and check out the available methods.
 - In the console, type `document.title`.
-  <detail>
-    <summaryWhat do you expect to see?</summary>
-    The `document.title` is going to output the title of the website, or what you see in your browser tab.
-  </detail>
+<details>
+<summaryWhat do you expect to see?</summary>
+The `document.title` is going to output the title of the website, or what you see in your browser tab.
+</details>
 - In the console, type `document.body.children[5]`.
   - This will show highlight main content div of our webpage, and we can narrow it down further/highlight other content from there.
 
@@ -157,14 +157,19 @@ The `<body>` section is for the visible content on a web page.  As well as our J
 - Location property is the URL of the page.
 - In the console, type `window.` and check out the available methods.
 - In the console, type `window.location`.
-  <details>
-    <summary>What do you expect to see?</summary>
-
-  </details>
+<details>
+<summary>What do you expect to see?</summary>
+`window.location.href` returns the href (URL) of the current page
+`window.location.hostname` returns the domain name of the web host
+`window.location.pathname` returns the path and filename of the current page
+`window.location.protocol` returns the web protocol used (http: or https:)
+`window.location.assign` loads a new document
+</details>
 - In the console, type `window.document.write('Hello')`.
-  <details>
-    <summary>Knowing what happened before, what do you expect this statement to do?</summary>
-  </details>
+<details>
+<summary>Knowing what happened before, what do you expect this statement to do?</summary>
+It will write over everything that exists on the webpage with the string 'Hello'.
+</details>
 
 ## HTML vs. DOM Vocabulary
 
