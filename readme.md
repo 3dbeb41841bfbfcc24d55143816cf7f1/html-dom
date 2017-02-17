@@ -280,7 +280,7 @@ Sir Timothy John Berners-Lee invented the World Wide Web in 1989.  He founded an
 
 <br />
 
-## Styled Text
+### Styled Text
 
 These tags can be used to set a specific style to text in an HTML document.
 
@@ -296,7 +296,7 @@ These tags can be used to set a specific style to text in an HTML document.
 
 <br />
 
-## Creating a table in HTML
+### Creating a table in HTML
 
 We can use the `<table>` tags to display tabular data.
 
