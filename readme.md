@@ -73,6 +73,8 @@ You are changing the DOM.  The developers at Craigslist will not be worried that
 
 <br />
 
+---
+
 ## **YOU DO**
 - 5 min - Read this article on the difference between HTML and the DOM from [CSS Tricks](https://css-tricks.com/dom/) 
 - 5 min - Pair and Share - discuss what you learned with your partner
@@ -82,7 +84,7 @@ You are changing the DOM.  The developers at Craigslist will not be worried that
 
 ---
 
-## Differentiate between HTML and DOM
+## Let's Differentiate between HTML and the DOM
 
 * **HTML**: the language we use to create an HTML Web Page / Document
 * **DOM**: the Document Object Model, i.e. the in-memory representation of the HTML page created when the browser _renders_ the HTML document.
