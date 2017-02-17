@@ -255,34 +255,46 @@ If your `<script>` tags are placed in the `<head>` of your document, your html w
 | `<h4>...</h4>` | Level 4 heading |
 | `<h5>...</h5>` | Level 5 heading |
 | `<h6>...</h6>` | Level 6 heading |
-| `<li>...</li>` | elements used for each item in ordered/unordered list tags |
-| `<img src="url" alt="description" /> ` | image tag. This is a self-closing, inline element tag, meaning you don't need a closing </img> tag. It should include the source (src) of the file (can be a url or a file path) and a description (alt tag) for search engines and screen readers.
-| `<a href="url">...</a>` | a hyperlink to another page. It needs to include an href which is the url to which it is linking. If you add a `target="_blank`, it will open the link in a new tab in the browser. You can also wrap images within `<a>` tags to transform them into a link.
+| `<li>...</li>` | li elements are used for each item in an ordered/unordered list |
+| `<img src="url" alt="description" /> ` | an image tag. This is a self-closing, inline element tag, meaning you don't need a closing </img> tag. An image tag should include the source/**src attribute** of the file (which can be a url or a relative file path) and a description/**alt attribute** for search engines and screen readers.  If you turn in work without alt tags, you will be docked for that.  It is extremely important to include them.
+| `<a href="url">...</a>` | a link tag provides a hyperlink to another page. A link tag needs to include an **href attribute** which is the url to which it is linking. If you add `target="_blank`, the link will open in a new tab, in the browser. 
+
+You can also wrap images within `<a>` tags to transform them into a link.
 
 #### Example of an Anchor containing an Image
 
 ```html
 <a href="www.w3.org" target="_blank">
-  <img src="http://www.misiide.net/images/2013/03/Tim-Berners-Lee.jpg" alt="A picture of Tim Berners-Lee!" />
+  <img src="http://www.misiide.net/images/2013/03/Tim-Berners-Lee.jpg"
+  alt="A picture of Tim Berners-Lee!" />
 </a>
 ```
 
-The `href` above makes the image "clickable" and redirects to the W3 website.
+The `href` attribute above makes the image of Sir Timothy John Berners-Lee "clickable" and redirects the user to the W3 website.
+
+<details>
+<summary>Who is Sir Timothy John Berners-Lee?</summary>
+Sir Timothy John Berners-Lee invented the World Wide Web in 1989.  He founded and Directs the World Wide Consortium (W3C) which oversees the continued development of the web. He also founded the World Wide Web Foundation whose mission is for the WWW to serve Humanity through improvement and availability, and he co-founded the Open Data Institute in London.
+</details>
 
 
-### Styled Text
+<br />
+
+## Styled Text
 
 These tags can be used to set a specific style to text in an HTML document.
 
-> NOTE: You should usually avoid these tags as it is better to use CSS for styling content.
+> NOTE: Traditionally, these tags are avoided, as it is better to use CSS for styling content.
 
 | Element       | Description                                               |
 |:------------- |:--------------------------------------------------------- |
-| `<b>...</b>`  | makes the wrapped text bold |
-| `<strong>...</strong>` | a bit similar to bold, the browser interprets this as an important bit of text, and will direct the reader's attention to it. |
-| `<i>...</i>`  | makes the wrapped text italic. |
-| `<em>...</em>` | a bit similar to italic, used by the browser to add emphasis on a word. |
-| `<br />`       | self-closing tag, allowing you to break the content (CSS will allow us to achieve the same result, in a better way). |
+| `<b>...</b>` | makes the wrapped text bold- only changing the style. |
+| `<strong>...</strong>` | similar to bold; the browser and screen readers interpret this as an important bit of text, and will direct the reader's attention to it.  `<strong>` tags are preferred over `<b>` tags. |
+| `<i>...</i>` | makes the wrapped text italic- only changing the style. |
+| `<em>...</em>` | similar to italic; it is used by the browser and screen readers to add emphasis to a word. `<em>` tags are preferred over `<i>` tags. |
+| `<br />` | a self-closing tag, allowing you to break the content (CSS will allow us to achieve the same result, in a more controlled way- by using margins or padding). |
+
+<br />
 
 ## Creating a table in HTML
 
@@ -304,35 +316,35 @@ Example:
 ```html
   <table border="1">
     <thead>
-        <tr>
-          <th>Date</th>
-          <th>Weight</th>
-          <th>Distance walked</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>September 15</td>
-          <td>75 kg</td>
-          <td>1.8 km</td>
-        </tr>
-        <tr>
-          <td>September 29</td>
-          <td>73 kg</td>
-          <td>2.1 km</td>
-        </tr>
-      </tbody>
+      <tr>
+        <th>Date</th>
+        <th>Weight</th>
+        <th>Distance walked</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>September 15</td>
+        <td>75 kg</td>
+        <td>1.8 km</td>
+      </tr>
+      <tr>
+        <td>September 29</td>
+        <td>73 kg</td>
+        <td>2.1 km</td>
+      </tr>
+    </tbody>
   </table>
 ```
 
-In our browser, we get:
+In the browser, this outputs:
 
 Date | Weight | Distance Walked
 -----|--------|-----------------
 September 15 | 75 kg |1.8 km
 September 29 |73 kg | 2.1 km
 
-> REMEMBER: Don't use tables to define the layout of a page! This is a very old and outdated technique that results in a poor overall design that is not easily styled with CSS and is not *responsive* to varying screen sizes.
+> **REMEMBER**: Don't use tables to define the layout of a page! This is a very old and outdated technique that results in a poor overall design that is not easily styled with CSS and is not *responsive* to varying screen sizes.
 
 ---
 
@@ -344,18 +356,18 @@ September 29 |73 kg | 2.1 km
 
 ## Google Chrome Developer Tools
 
-Let us have a quick first look at **Chrome Developer Tools**. Available as a console in Google Chrome, it allows us to get a lot of information about the page we're on, providing a detailed look into the HTML structure of the page and the CSS styling, among other things.
+Let us have a quick first look at **Chrome Developer Tools**. Available as a console in Google Chrome, it allows us to get a lot of information about the page we are on, providing a detailed look into the HTML structure of the page as well as the CSS styling, among other things.
 
 In Chrome, you can access it with:
-  - `Cmd+Alt+i` on a Mac
+  - `Cmd + Alt + i` on a Mac
   - `Ctrl + Shift + C` or `F12` on Windows or Linux
-  - right-click on the browser and click on "Inspect element"
+  - or right-click on the browser and click on the "Inspect element" option
 
-As of now, let's mainly look at the "Elements" tab -> it's a very powerful way to look at the page structure, and locate specific elements within the page.
+As of now, let's mainly look at the "Elements" tab -> This tab is a very powerful way to look at the page structure, and locate specific elements within the page as well as view their styles.
 
-You can also gain some useful information on all of the elements by looking at the data on the right column of the console, most notably the CSS properties currently applied to the elements... and change them "live" (these changes, however, only apply to the page as displayed - it will not be saved in your CSS file, and all these changes disappear on the next page reload).
+You can gain some useful information on all of the elements by looking at the data on the right column of the console, most notably the CSS properties that are currently applied to the elements. You can change them/"live" update them to play around with different styles. These changes, however, only apply to the page that is displayed, you are only updating the DOM - they will not save to your CSS file unless you manually add them, and they will disappear on the next page reload.
 
-We will get to play with this functionality more as we dig deeper into the CSS chapter.
+We will play with this functionality more when we dig deeper into CSS.
 
 ---
 
