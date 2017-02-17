@@ -183,6 +183,8 @@ This statement will highlight the main content div, and we can click through and
 It will write over everything that exists on the webpage with the string 'Hello'.  Notice that this is similar to `document.write`.  The only difference is that we added `window.` in front of that statement.  `Document`, returns the document object for the window.  Often, the `window.` is left off of window object methods.
 </details>
 
+<br />
+
 ## HTML vs. DOM Vocabulary
 
 | HTML          | DOM           |  Example                              |
@@ -190,18 +192,20 @@ It will write over everything that exists on the webpage with the string 'Hello'
 | tag / element | node          | `<p>This is a paragraph</p>`          |
 | attribute     | property      | `<a href="www.google.com">Google</a>` |
 
+<br />
+
 ## Introduction to HTML tags
 
 **YOU DO**
 
-Consider using the [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) to have each student build a page in 15-ish min. Then, choose a student to demo what they built as you guide them through the review notes below.
+Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) and follow the instructions to build a basic webpage in 15 minutes. Based on the screenshots of your sites, sent to me in slack, I will then choose a student to demo what they have built.  We will then go over the review notes below.
 
 ### Basic Structure of an HTML Document
 
 * `<!DOCTYPE html>` -> informs the browser that this file is an HTML file
 * `<html>...</html>` -> contains your html content - it will tell the browser that everything within these tags should be interpreted as HTML.
 
-When opening a new html file, it is important to include a `head` section.
+When creating a new html file, you must include a `<head>` section, along with a `<title>`.
 
 ```html
 <head>
@@ -211,9 +215,9 @@ When opening a new html file, it is important to include a `head` section.
 </head>
 ```
 
-The `head` is important for search engines, as it helps provide additional information about the website. Anything within the `<head>` and `</head>` tags will NOT be displayed on the page.
+The `head` section is important for search engines, as it helps provide additional information about the website. Anything within the opening and closing `<head>` tags will **NOT** be displayed on the page.
 
-We place these tags right after the opening `<html>` tag, and before the opening `<body>` tag.
+The `<head>` tags are placed right after the opening `<html>` tag, and before the opening `<body>` tag.
 
 
 ## Common HTML Elements
@@ -223,33 +227,37 @@ We place these tags right after the opening `<html>` tag, and before the opening
 | Element        | Description                                               |
 |:-------------- |:--------------------------------------------------------- |
 | `<link>`       | used to load a CSS file - it is self closing. |
-| `<script>`     | used to load a JavaScript file or for embedding JavaScript code. |
+| `<script>`     | used to load a JavaScript file or for embedding JavaScript code. **Although any script tags should really be at the bottom of your html page** |
+<details>
+<summary>Does anyone know why?</summary>
+If your `<script>` tags are placed in the `<head>` of your document, your html will wait to render until the javaScript has been loaded.
+</details>
 
 ### Containers
 
 | Element        | Description                                               |
 |:-------------- |:--------------------------------------------------------- |
 | `<head>`       | contains metadata about the page, including the title, links to external stylesheets, js files, google fonts, etc, and other meta tags. |
-| `<body>`       | contains the body of the page we will display. |
-| `<div>`        | a container used for grouping child elements. DIVs are _block_ elements that take up the whole width of the page unless specific style is applied to them to do otherwise. They can contain paragraphs, headings, text, images, other divs, etc. They work as a way to structure the page with clearly delimited blocks. |
-| `<ul>...</ul>` | an unordered list (bullet points) of `<li>` elements |
-| `<ol>...</ol>` | an ordered list (numbered) of `<li>` elements |
+| `<body>`       | contains the body of the page to be displayed. |
+| `<div>`        | a container used for grouping child elements. Divs are **block elements** that take up the whole width of the page unless specific style is applied to them to do otherwise. They can contain paragraphs, headings, text, images, other divs, etc. They work as a way to structure the page with clearly delimited blocks. |
+| `<ul>...</ul>` | an unordered list with bullet points before the `<li>` elements |
+| `<ol>...</ol>` | an ordered list with numbers before the `<li>` elements |
 
 ### Content
 
 | Element       | Description                                               |
 |:------------- |:--------------------------------------------------------- |
 | `<p>...</p>`   | a simple paragraph |
-| `<span>...</span>`  | inline element, allows us to isolate a bit of text and apply a style to it using CSS (more on this later). |
-| `<h1>...</h1>` | Level 1 heading |
-| `<h2>...</h2>` | Level 2 heading |
+| `<span>...</span>`  | **inline element**, allows us to isolate a bit of text and apply a specific/different style to it using CSS. |
+| `<h1>...</h1>` | Level 1 heading. Used to show the most important element on the page. |
+| `<h2>...</h2>` | Level 2 heading. Used for the second most important element on the page.  And so on... |
 | `<h3>...</h3>` | Level 3 heading |
 | `<h4>...</h4>` | Level 4 heading |
 | `<h5>...</h5>` | Level 5 heading |
 | `<h6>...</h6>` | Level 6 heading |
-| `<li>...</li>` | elements to be put within the ordered/unordered list tags |
-| `<img src="url" alt="description" /> ` | image tag. This is a self-closing tag, meaning you don't need a closing </img> tag. It should include the source of the file (can be a url or a file path) and a description (alt) for the search engines.
-| `<a href="url">...</a>` | hyperlink to another page; needs to include an href which is the url it is linking to. You can add a `target="_blank` which will open the link in a new tab in the browser. We can also wrap images within `<a>` tags to transform it into a link.
+| `<li>...</li>` | elements used for each item in ordered/unordered list tags |
+| `<img src="url" alt="description" /> ` | image tag. This is a self-closing, inline element tag, meaning you don't need a closing </img> tag. It should include the source (src) of the file (can be a url or a file path) and a description (alt tag) for search engines and screen readers.
+| `<a href="url">...</a>` | a hyperlink to another page. It needs to include an href which is the url to which it is linking. If you add a `target="_blank`, it will open the link in a new tab in the browser. You can also wrap images within `<a>` tags to transform them into a link.
 
 #### Example of an Anchor containing an Image
 
