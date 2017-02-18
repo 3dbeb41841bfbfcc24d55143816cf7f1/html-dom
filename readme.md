@@ -346,6 +346,8 @@ September 29 |73 kg | 2.1 km
 
 > **REMEMBER**: Don't use tables to define the layout of a page! This is a very old and outdated technique that results in a poor overall design that is not easily styled with CSS and is not *responsive* to varying screen sizes.
 
+<br />
+
 ---
 
 ## HTML Cheatsheet
