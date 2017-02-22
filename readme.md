@@ -26,7 +26,7 @@
 - Pre-work and About Me page completion
 
 ## Hook (5m)
-This morning we're gonna take a look at the DOM and how we can use the Chrome Dev Tools to manipulate and test it out. This afternoon we'll use more advanced ways to perform DOM manipulation using Javascript.
+This morning we are going to take a look at the DOM and how we can use the Chrome Dev Tools to manipulate it. This afternoon we will look at more advanced ways to perform DOM manipulation using Javascript.
 
 <details>
 <summary>To start, can someone describe the difference between HTML and the DOM in their own words?</summary>
@@ -218,6 +218,11 @@ Note that when placing a tag inside another tag, you should indent the new tag t
 </details>
 
 <details>
+<summary>What is the importance of the 'alt' attribute?</summary>
+    The `alt` attribute tells screen readers about the image displayed.
+</details>
+
+<details>
 <summary>Who is Sir Timothy John Berners-Lee?</summary>
 Sir Timothy John Berners-Lee invented the World Wide Web in 1989.  He founded and Directs the World Wide Consortium (W3C) which oversees the continued development of the web. He also founded the World Wide Web Foundation whose mission is for the WWW to serve Humanity through improvement and availability, and he co-founded the Open Data Institute in London.
 </details>
@@ -268,6 +273,10 @@ Every site should start with:
 
 1. body: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
 
+1. title: This is what shows up in your browser tab.
+
+** These are the 4 pairs of tags: html, head, title and body that are mandatory for every web page.
+
 <br />
 
 ### Meta Tags
@@ -277,10 +286,10 @@ Every site should start with:
 | `<link>`       | used to load a CSS file - it is self closing. |
 | `<script>`     | used to load a JavaScript file or for embedding JavaScript code. |
 
-**Although any script tags should really be at the bottom of your html page** |
+**Although any script tags should really be at the bottom of your html page**
 <details>
 <summary>Does anyone know why?</summary>
-If your `<script>` tags are placed in the `<head>` of your document, your html will wait to render until the javaScript has been loaded.
+If your `<script>` tags are placed in the `<head>` of your document, your html will wait to render until the javaScript has been loaded.  Therefore, it is best to place it at just before your closing body tag.
 </details>
 
 <br />
@@ -292,15 +301,17 @@ If your `<script>` tags are placed in the `<head>` of your document, your html w
     - `mkdir html_css_intro`
     - `cd` into the folder
     - `touch index.html`
-    - `atom .`
+    - `subl .`
     - Create the basic html structure
-2. Add meta tags for external `css` and `javascript` files.
+2. Add the meta tags for external `css` and `javascript` files.
+    - `<link rel="stylehseet" type="text/css" href="main.css" />`
+    - `<script src="main.js"></script>`
 
 ---
 
-**YOU DO - 2 minutes**
+**YOU DO - (2m)**
 
-I want you to put every html tag you can think of into Slack with a description. Don't worry about duplicates and don't overthink it. Just type 'em in there!
+I want you to put every html tag you can think of into Slack with a description. Don't worry about duplicates and don't overthink it. Just type them in there!
 
 For example: `<p></p>` - paragraph tag, block element, used for basic text on a page
 
@@ -311,29 +322,29 @@ For example: `<p></p>` - paragraph tag, block element, used for basic text on a 
 ### Basic Tags
 
 1. h1, h2, h3, h4, h5, h6
-  - These are headers.  Imagine you're giving a lecture and you want to have an outline.  These will help a computer/programmer figure out what are the title, sub sections, sub-sub sections, etc. of your outline.
+  - These are headers.  Imagine you are giving a lecture and you would like to create an outline.  Headers will help a computer/programmer figure out what are the title, sub sections, sub-sub sections, etc. of your outline.  The allude to importance on an html page.
   - The lower the number, the more important the header is.  h1 tags are generally the title of the page.  h2 denote a section, and so on.
 1. p
   - These are paragraphs
 
 ### Specific Structural Elements
 
-Of course a website is more than just headers and paragraphs, though.  It has many sections to it that a normal outline doesn't.  Here are some of the more common tags we use to give structure to the page
+Of course a website is more than just headers and paragraphs.  It has many sections to it that a normal outline doesn't.  Here are some of the more common tags we use to give structure to the page"
 
 See also [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
 
 1. header
-  - could contain elements like a log and a nav bar.  Perhaps the title of the page too?
+  - could contain elements like a logo and a nav bar.  Perhaps the title of the page too?
 1. footer
   - could contain disclaimers, copyrights, and less important links (privacy, terms and conditions, legal, etc).
 1. main
   - the bulk of your site goes in here
 1. section
-  - within some of the tags listed above, there can be different sections.  Use this tag to block each section off
+  - within some of the tags listed above, there can be different sections.  Use this tag to block off those sections.
 1. nav
   - this will hold navigation links
 1. article
-  - if you're writing a blog, or have a page with many self contained sections, this might work well
+  - if you're writing a blog, or have a page with many self contained sections, you might think about using the article tag
 1. aside
   - this is for tangential material.  Sidebars, inserts, etc.
 
@@ -354,16 +365,16 @@ In the `index.html` file you created earlier...
 
 ### Generic Structure
 
-Sometimes we need a tag that doesn't fit into any of the previously defined categories.  If this is the case, we can use one of two generic tags
+Sometimes we need a tag that doesn't quite fit into any of the previously defined categories.  If this is the case, we can use one of two generic tags
 
 1. div
   - used to block out chunks of content
 1. span
-  - use to block out small bits of content (e.g. words, sentences, etc)
+  - use inline, to separate out small bits of content (e.g. letters, words, sentences, etc)
 
 ### Elements
 
-Some elements are not structural, but actually make the content display differently
+Some elements are not structural, but will make the content display differently
 
 1. ul/ol/li
   - creates a list, either unordered (ul) or ordered (ol)
@@ -371,13 +382,15 @@ Some elements are not structural, but actually make the content display differen
 
 ### Styled Text 
 1. em
-  - this will emphasize a chunk of text, usually making it italics
+  - this will emphasize a chunk of text, usually making it italicized
   - best practice- use **em** instead of **i**
 1. strong
   - this will emphasize a chunk of text, usually making it bold.
   - best practice- use **strong** instead of *b*
 
-  > NOTE: You should usually avoid these tags as it is better to use CSS for styling content.
+  > NOTE: It is usually better to avoid these tags as it is better to use CSS for styling content.
+
+  - We use strong and em because screen readers will say what is inside of these tags with a strong or emphasized voice.
   
 <br />
 
@@ -398,17 +411,17 @@ In the `index.html` file you created earlier...
 Some elements do not contain content and instead are purely for decoration.  Elements that do not contain content are written like so `<no-content-tag/>`.  Note there is no closing tag and the slash comes before the final `>`
 
 1. hr
-  - horizontal rule, `<hr/>` creates a divider
+  - horizontal rule, `<hr>` creates a divider
 1. br
-  - break, `<br/>`, starts a new line in a chunk of text.
+  - break, `<br />`, starts a new line in a chunk of text.
 
 ---
 
 <br />
 
-## Describe what the attributes of a tag do
+## Describe what attributes do
 
-We can add more meaning to a tag by adding "attributes" to it.  It looks like `<some-tag my-attribute="attribute-value"><some-tag>` or `<self-closing-tag attribute="value"/>`.  Again, in general, we don't create our own attributes, but instead choose from predefined ones which have specific functionality depending on what tag they're attached to.
+We can add more meaning to a tag by adding "attributes" to it.  It looks like `<some-tag my-attribute="attribute-value"><some-tag>` or `<self-closing-tag attribute="value"/>`.  Again, in general, we don't create our own attributes, but instead choose from predefined ones that have specific functionality depending on what tag they're attached to.
 
 | HTML          |  Example                              |
 |:-------------:|:------------------------------------- |
@@ -420,22 +433,22 @@ We can add more meaning to a tag by adding "attributes" to it.  It looks like `<
 
 <br />
 
-## List some common tags that have attributes
+## Common tags with attributes
 
 1. a
   - Anchor tag.  Creates a clickable link to another page.  Uses the `href` attribute to do so
   - example: `<a href="http://www.google.com">This link will go to Google</a>`
   - note that the actual URL (location) of the page is hidden, and that only the content is shown.
 1. img
-  - self closing, but contains a `src` attribute with is the URL to an image
-  - example: `<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"/>`
+  - self closing, but contains a `src` attribute with is the URL for the image
+  - example: `<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google logo"/>`
 1. video
-  - like `img` but goes to a video
+  - like `img` but links to a video
   - example: `<video src="http://www.w3schools.com/html/mov_bbb.mp4"/>`
   - also has attributes like `autoplay`, `controls`, `loop`
 1. audio
   - like `img` and `video`
-  - example: `<audio controls="true" src="http://www.w3schools.com/tags/horse.mp3"/>`
+  - example: `<audio controls="true" src="http://www.w3schools.com/tags/horse.mp3" />`
 
 <br />
 
@@ -452,7 +465,7 @@ In the `index.html` file you created earlier...
 
 ## Describe what Semantic HTML means
 
-The most important thing to remember is that these tags and attributes are supposed to give structure and meaning your content, not appearance.  Sometimes you might want the title of the page to be smaller than the titles of the sub sections.  You should still use the tag that conveys the proper meaning, even if it doesn't look right.
+The most important thing to remember is that these tags and attributes are supposed to give structure and meaning your content, not appearance.  Sometimes you might want the title of the page to be smaller than the titles of the sub sections.  You should still use the tag that conveys the proper meaning, even if it doesn't look right.  You mainly need to focus on this because of screen readers, so that they can understand the importance of the tags/flow of your page.
 
 <br />
 
@@ -466,13 +479,29 @@ _STOP READING HERE AND WORK ON THE [HTML PRACTICE EXERCISE](../student_labs/html
 
 1. Why should we use the `<strong>` tag instead of the `<b>` tag?
 2. What does Accessibility mean?
-3. What is [HTML5 Boilerplate](html5-boilerplate.md)?
 
 <br />
 
 **YOU DO**
 
-Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) and follow the instructions to build a basic webpage in 15 minutes. Based on the screenshots of your sites, sent to me in slack, I will then choose a student to demo what they have built.  We will then go over the review notes below.
+Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) and follow the instructions to build a basic webpage in 15 minutes. Based on the screenshots of your sites, sent to me in slack, I will then choose a student to demo what they have built.  
+
+---
+
+![Imgur](http://i.imgur.com/WzTTdIe.jpg)
+
+## Exercise #1
+
+Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website:
+
+[How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
+
+* [Starter Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
+* [Finished Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline_fin.html)
+
+## Exercise #2
+
+Clone your HTML/DOM repo and work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise.
 
 ---
 
@@ -528,18 +557,3 @@ For information on HTML5 Boilerplate, see [HTML5 Boilerplate](html5-boilerplate.
 * [CSS Tricks](https://css-tricks.com/dom/)
 
 ---
-
-![Imgur](http://i.imgur.com/WzTTdIe.jpg)
-
-## Exercise #1
-
-Using HTML tags only (don't worry about CSS), use the starter code below to recreate the Document Outline for the following website:
-
-[How We Use Energy](http://needtoknow.nas.edu/energy/energy-use/)
-
-* [Starter Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline.html)
-* [Finished Code](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/energy_dom_outline/energy_document_outline_fin.html)
-
-## Exercise #2
-
-Clone your HTML/DOM repo and work on the [Busy Hands](https://github.com/ATL-WDI-Exercises/busy-hands) exercise.
