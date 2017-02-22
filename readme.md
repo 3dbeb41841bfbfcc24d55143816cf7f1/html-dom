@@ -185,20 +185,15 @@ It will write over everything that exists on the webpage with the string 'Hello'
 
 <br />
 
-## HTML vs. DOM Vocabulary
-
-| HTML          | DOM           |  Example                              |
-|:-------------:|:-------------:|:------------------------------------- |
-| tag / element | node          | `<p>This is a paragraph</p>`          |
-| attribute     | property      | `<a href="www.google.com">Google</a>` |
-
-<br />
-
 ## Introduction to HTML tags
 
-## Describe what the content of a tag is - 5 min
+## Describe the content of a tag - (5m)
 
-Between the opening and closing tags, we insert the text or "content" of the tag.  The final result would look like this: `<example-tag>Content Goes in here</example-tag>`.  Tags can also be placed within other tags:
+Between the opening and closing tags, we insert the text or "content" of a tag.  
+
+The final result would look like this: `<example-tag>Content Goes in here</example-tag>`.  
+
+Tags can also be placed within other tags:
 
 ```html
 <outer-tag>
@@ -206,9 +201,9 @@ Between the opening and closing tags, we insert the text or "content" of the tag
 </outer-tag>
 ```
 
-Note that when placing a tag inside another tag, you should indent the new tag to show it is a child of its parent tag.
+Note that when placing a tag inside another tag, you should indent the new tag to show that it is a child of its parent tag.
 
-##### Example of an Anchor containing an Image
+##### Example of an Anchor tag containing an Image tag
 
 ```html
 <a href="www.w3.org" target="_blank">
@@ -231,7 +226,7 @@ Sir Timothy John Berners-Lee invented the World Wide Web in 1989.  He founded an
 
 ![We Do](http://i.imgur.com/6Kce0ca.png)
 
-#####WE DO - 20 min
+#####WE DO - (10m)
 
 As a quick review, I will give you some examples of broken HTML and you tell me what's wrong with them. 
 
@@ -247,7 +242,7 @@ As a quick review, I will give you some examples of broken HTML and you tell me 
 
 ## Common Tags
 
-In general, we don't create our own tags.  Instead there are a set of pre-defined tags with functionality that is already associated with them.
+In general, we don't create our own tags.  Instead there are a set of pre-defined tags with functionality already associated with them.
 
 ### Initializing a page
 
@@ -256,7 +251,9 @@ Every site should start with:
 ```html
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <title></title>
+  </head>
   <body></body>
 </html>
 ```
@@ -265,9 +262,9 @@ Every site should start with:
 1. html: shows where the html begins
 1. head: contains content specifically for the browser, not the user, to see (e.g.- meta tags, google analytics scripts). 
 
-The `head` section is important for search engines, as it helps provide additional information about the website. Anything within the opening and closing `<head>` tags will **NOT** be displayed on the page.
+  - The `head` section is important for search engines, as it helps provide additional information about the website. Anything within the opening and closing `<head>` tags will **NOT** be displayed on the page.
 
-The `<head>` tags are placed right after the opening `<html>` tag, and before the opening `<body>` tag.
+  - The `<head>` tags are placed right after the opening `<html>` tag, and before the opening `<body>` tag.
 
 1. body: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
 
