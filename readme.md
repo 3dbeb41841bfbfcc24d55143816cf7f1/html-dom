@@ -271,6 +271,8 @@ The `<head>` tags are placed right after the opening `<html>` tag, and before th
 
 1. body: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
 
+<br />
+
 ### Meta Tags
 
 | Element        | Description                                               |
@@ -298,8 +300,6 @@ If your `<script>` tags are placed in the `<head>` of your document, your html w
 2. Add meta tags for external `css` and `javascript` files.
 
 ---
-
-<br />
 
 **YOU DO - 2 minutes**
 
@@ -404,6 +404,8 @@ Some elements do not contain content and instead are purely for decoration.  Ele
   - horizontal rule, `<hr/>` creates a divider
 1. br
   - break, `<br/>`, starts a new line in a chunk of text.
+
+---
 
 <br />
 
