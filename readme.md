@@ -469,7 +469,9 @@ The most important thing to remember is that these tags and attributes are suppo
 
 <br />
 
-_STOP READING HERE AND WORK ON THE [HTML PRACTICE EXERCISE](../student_labs/html-practice-and-review.md)_
+**YOU DO**
+
+Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) and follow the instructions to build a basic webpage in 15 minutes. Based on the screenshots of your sites, sent to me in slack, I will then choose a student to demo what they have built.
 
 <br />
 
@@ -481,10 +483,6 @@ _STOP READING HERE AND WORK ON THE [HTML PRACTICE EXERCISE](../student_labs/html
 2. What does Accessibility mean?
 
 <br />
-
-**YOU DO**
-
-Go to this [HTML Practice Exercise](https://github.com/ATL-WDI-Exercises/html-dom/blob/master/html_practice_exercise.md) and follow the instructions to build a basic webpage in 15 minutes. Based on the screenshots of your sites, sent to me in slack, I will then choose a student to demo what they have built.  
 
 ---
 
