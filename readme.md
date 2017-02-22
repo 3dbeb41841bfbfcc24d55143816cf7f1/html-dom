@@ -222,7 +222,6 @@ Note that when placing a tag inside another tag, you should indent the new tag t
     The `href` attribute above makes the image of Sir Timothy John Berners-Lee "clickable" and redirects the user to the W3 website.
 </details>
 
-
 <details>
 <summary>Who is Sir Timothy John Berners-Lee?</summary>
 Sir Timothy John Berners-Lee invented the World Wide Web in 1989.  He founded and Directs the World Wide Consortium (W3C) which oversees the continued development of the web. He also founded the World Wide Web Foundation whose mission is for the WWW to serve Humanity through improvement and availability, and he co-founded the Open Data Institute in London.
@@ -244,9 +243,7 @@ As a quick review, I will give you some examples of broken HTML and you tell me 
 
 ![We Do](http://i.imgur.com/6Kce0ca.png)
 
-
 # WE DO - CODE ALONG -  90 min 
-
 
 ## Common Tags
 
@@ -274,7 +271,7 @@ The `<head>` tags are placed right after the opening `<html>` tag, and before th
 
 1. body: contains all the content that the user will see when viewing the html in a web browser like Chrome, Firefox, etc.
 
-### meta tags
+### Meta Tags
 
 | Element        | Description                                               |
 |:-------------- |:--------------------------------------------------------- |
@@ -300,7 +297,9 @@ If your `<script>` tags are placed in the `<head>` of your document, your html w
     - Create the basic html structure
 2. Add meta tags for external `css` and `javascript` files.
 
-<br>
+---
+
+<br />
 
 **YOU DO - 2 minutes**
 
@@ -308,7 +307,11 @@ I want you to put every html tag you can think of into Slack with a description.
 
 For example: `<p></p>` - paragraph tag, block element, used for basic text on a page
 
-### basic tags
+---
+
+<br />
+
+### Basic Tags
 
 1. h1, h2, h3, h4, h5, h6
   - These are headers.  Imagine you're giving a lecture and you want to have an outline.  These will help a computer/programmer figure out what are the title, sub sections, sub-sub sections, etc. of your outline.
@@ -316,7 +319,7 @@ For example: `<p></p>` - paragraph tag, block element, used for basic text on a 
 1. p
   - These are paragraphs
 
-### specific structure
+### Specific Structural Elements
 
 Of course a website is more than just headers and paragraphs, though.  It has many sections to it that a normal outline doesn't.  Here are some of the more common tags we use to give structure to the page
 
@@ -337,7 +340,7 @@ See also [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.a
 1. aside
   - this is for tangential material.  Sidebars, inserts, etc.
 
-<br>
+<br />
 
 **YOU DO**
 
@@ -347,7 +350,10 @@ In the `index.html` file you created earlier...
 2. Add `title` tags and empty `nav` tags inside the `body` 
 3. Add a `main` section
 4. Add a `footer` section with your name
-<br>
+
+---
+
+<br />
 
 ### Generic Structure
 
@@ -385,7 +391,9 @@ In the `index.html` file you created earlier...
 1. Add a `ul` with 4 `li` tags to your `nav`
 2. Add styled text tags to some piece of content
 3. Add a `span` tag to a small piece of content
-  
+
+--- 
+
 <br />
 
 ### Decorative Elements
@@ -441,12 +449,7 @@ In the `index.html` file you created earlier...
 
 <br />
 
-## HTML Cheatsheet
-
-There is an [Anatomy of an HTML Document](images/html-cheat-sheet-v1.png) cheatsheet at the bottom of this lesson. Check it out.
-
-<br />
-
+---
 
 ## Describe what Semantic HTML means
 
@@ -456,15 +459,17 @@ The most important thing to remember is that these tags and attributes are suppo
 
 _STOP READING HERE AND WORK ON THE [HTML PRACTICE EXERCISE](../student_labs/html-practice-and-review.md)_
 
-<br>
+<br />
 
-## Review Questions - 10 min
+---
+
+## Review Questions (10m)
 
 1. Why should we use the `<strong>` tag instead of the `<b>` tag?
 2. What does Accessibility mean?
 3. What is [HTML5 Boilerplate](html5-boilerplate.md)?
 
-<br>
+<br />
 
 **YOU DO**
 
